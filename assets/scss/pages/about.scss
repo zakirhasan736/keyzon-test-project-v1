@@ -1,0 +1,13 @@
+.kyz-main-body-content-wrap{
+    &.about--page{
+        .kyz-about-section {
+            padding-top: 76px;
+            @include _991{
+            padding-top: 61px;
+            }
+            @include _767{
+                padding-top: 42px;
+                }
+        }
+    }
+}

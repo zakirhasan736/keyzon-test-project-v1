@@ -1,0 +1,20 @@
+.kyz-related-product-section {
+	padding-bottom: 129px;
+    @include _991{
+        padding-bottom: 111px;
+    }
+    @include _767{
+        padding-bottom: 82px;
+    }
+    .kyz-related-product-title{
+        margin-bottom: 98px;
+        @include _991{
+            margin-bottom: 42px;
+        }
+    }
+    .kyz-related-product-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+}

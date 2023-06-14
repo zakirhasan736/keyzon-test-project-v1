@@ -1,0 +1,35 @@
+.kyz-breadcromb-wrap {
+    position: relative;
+  }
+  .kyz-breadcrumb {
+    position: relative;
+    margin-top: 76px;
+    @include _991{
+      position: relative;
+      margin-top: 60px;
+      top: 0;
+    }
+    @include _767{
+      margin-top: 35px;
+    }
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    li {
+        a {
+            font-family: var(--primary-font);
+            font-style: normal;
+            font-weight: 900;
+            font-size: 14px;
+            line-height: 17px;
+            white-space: normal;
+            @include _767{
+              font-size: 12px;
+              line-height: 14px;
+            }
+            text-transform: uppercase;
+            color: var(--dark-green);
+          }
+    }
+  }

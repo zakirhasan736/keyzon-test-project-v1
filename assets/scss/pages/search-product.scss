@@ -1,0 +1,90 @@
+.kyz-main-body-content-wrap {
+  &.search-product--page {
+    .kyz-all-products-main {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      grid-column: 2;
+      padding-bottom: 90px;
+      @include _991 {
+        padding-bottom: 78px;
+      }
+      @include _767 {
+        padding-bottom: 30px;
+      }
+    }
+    .kyz-product-overview-wrapper {
+      .kyz-product-top-header {
+        padding-bottom: 43px;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+    .kyz-product-overview-wrapper {
+      background-color: transparent;
+    }
+    .kyz-product-overview-main-content {
+      padding-bottom: 175px;
+      padding-left: 0px;
+      padding-right: 0px;
+      @include _991 {
+        padding-bottom: 125px;
+      }
+      @include _767 {
+        padding-bottom: 80px;
+      }
+    }
+    .kyz-read-more-btn {
+      font-family: var(--primary-font);
+      font-style: normal;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+      color: var(--dark-green);
+      display: block;
+      background-color: transparent;
+      width: 100%;
+      grid-column: 2;
+      @include _767 {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+    .kyz-product-cta-section {
+      margin-bottom: 222px;
+      @include _991 {
+        margin-bottom: 124px;
+      }
+      @include _767 {
+        margin-bottom: 74px;
+      }
+    }
+    .kyz-search-data-title-box {
+      margin-bottom: 63px;
+      @include _991 {
+        margin-bottom: 31px;
+      }
+      @include _767 {
+        margin-bottom: 53px;
+      }
+    }
+	.kyz-product-overview-wrapper {
+		@include _767{
+			padding: 0px 0px 0 0px;
+		}
+	}
+  }
+  .kyz-product-search-overview{
+	padding-top: 86px;
+	@include _991{
+		padding-top: 36px;
+	}
+	@include _767{
+		padding-top: 53px;
+	}
+  }
+
+}

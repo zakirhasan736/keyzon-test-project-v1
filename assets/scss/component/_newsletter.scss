@@ -1,0 +1,118 @@
+.newsletter-section {
+  background: var(--dark-green);
+  padding: 61px 38px;
+  @include _768{
+    padding: 69px 48px 77px;
+  }
+  @include _992 {
+    padding: 96px 80px 114px;
+  }
+
+  .newsletter-wrapper {
+    .newsletter-title{
+        margin-bottom: 34px;
+        color: var(--white);
+        max-width: 570px;
+    }
+    .newsletter {
+      display: grid;
+      grid-template-columns: 100%;
+      @include _768 {
+        grid-template-columns: 1fr 1fr;
+      }
+      gap: 20px;
+      &--checkbox {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .checkbox__input {
+          display: none;
+        }
+        .checkbox__text {
+          font-family: var(--primary-font);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          color: var(--white);
+          max-width: 352px;
+        }
+        .checkbox__element {
+          width: 15px;
+          min-width: 15px;
+          height: 15px;
+          border: 3px solid #008179;
+          @include _768 {
+            width: 30px;
+            min-width: 30px;
+            height: 30px;
+          }
+          display: block;
+          background: var(--white);
+          padding: 5px;
+          position: relative;
+          color: var(--white);
+          &::before {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            left: 0;
+            top: -1px;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            background-color: var(--dark-green);
+            display: none;
+          }
+        }
+        input[type='checkbox']:checked ~ .checkbox__element {
+          &::before {
+            display: block;
+          }
+        }
+      }
+      &--submit {
+        font-family: var(--primary-font);
+        font-style: normal;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: var(--dark-green);
+        height: 61px;
+        background: var(--light-green);
+        svg {
+          fill: var(--white);
+        }
+      }
+      &--input {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        border: 3px solid #008179;
+        @include _992 {
+          min-width: 380px;
+          padding: 22px 26px;
+        }
+        font-family: var(--primary-font);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: var(--dark-green);
+        padding: 18px 13px;
+        &::placeholder {
+          font-family: var(--primary-font);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: var(--dark-green);
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+}

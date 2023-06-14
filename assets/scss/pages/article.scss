@@ -1,3 +1,63 @@
-button{
-    background-color: red;
+.kyz-main-body-content-wrap{
+    &.article--page{
+        .kyz-articles-section {
+            padding-top: 111px;
+            @include _991{
+                padding-top: 49px;
+            }
+            @include _767{
+                padding-top: 43px;
+            }
+        }
+        .kyz-articles-section {
+            .kyz-articles-wrapper {
+                .kyz-article-title{
+                    &.main-title{
+                        padding-bottom: 125px;
+                        @include _991{
+                            padding-bottom: 80px;
+                        }
+                        @include _767{
+                            padding-bottom: 50px;
+                        }
+                    }
+                   
+                }
+            }
+        }
+        .kyz-articles-feature--box {
+            .kyz-articles-feature-left-cont {
+                .kyz-articles-feature-card{
+                    &:not(:last-child){
+                        margin-bottom: 85px;
+                        @include _991{
+                            margin-bottom: 73px;
+                        }
+                        @include _767{
+                            margin-bottom: 47px;
+                        }
+                    }
+                }
+            }
+        }
+        .kyz-articles-single--item {
+            padding-bottom: 0;
+            padding-top: 134px;
+            @include _991{
+                padding-top: 100px;
+            }
+            @include _767{
+                padding-top: 73px;
+            }
+        }
+        .kyz-product-cta-section {
+            padding-bottom: 165px;
+            @include _991{
+                padding-bottom: 87px;
+            }
+            @include _767{
+                padding-bottom: 60px;
+            }
+        }
+    }
 }

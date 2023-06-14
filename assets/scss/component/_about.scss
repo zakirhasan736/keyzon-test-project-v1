@@ -1,0 +1,105 @@
+.kyz-about {
+  &-section {
+    position: relative;
+    @include _768{
+        padding-top: 74px;
+        padding-bottom: 106px;
+    }
+    @include _992{
+        padding-top: 174px;
+        padding-bottom: 170px;
+    }
+    padding-top: 67px;
+    padding-bottom: 63px;
+    .small-text {
+        @include _992{
+            margin-bottom: 65px;
+        }
+        margin-bottom: 30px;
+        max-width: 467px;
+      }
+      .kyz-button {
+        display: block;
+        margin-left: 0;
+
+      }
+  }
+
+  &-content-box {
+    @include _768 {
+      display: grid;
+      grid-column-gap: 50px;
+      grid-template-areas: 'about-topic1 about-topic1' 'about-topic3 about-topic3' 'about-topic2 about-topic4' 'about-topic2 about-topic5' 'about-topic2 about-topic6';
+    }
+    @include _992 {
+      grid-template-areas: 'about-topic2 about-topic1' 'about-topic2 about-topic3' 'about-topic2 about-topic4' 'about-topic2 about-topic5' 'about-topic2 about-topic6';
+    }
+    :nth-child(1) {
+      grid-area: about-topic1;
+    }
+    :nth-child(2) {
+      grid-area: about-topic2;
+    }
+    :nth-child(3) {
+      grid-area: about-topic3;
+      color: var(--light-green);
+    }
+    :nth-child(4) {
+      grid-area: about-topic4;
+    }
+    :nth-child(5) {
+      grid-area: about-topic5;
+    }
+    :nth-child(6) {
+      grid-area: about-topic6;
+    }
+  }
+  &-modal-img{
+    @include _768{
+        width: 324px;
+        height: 226px;
+    }
+    @include _992{
+        width: 700px;
+        height: 490px;
+    } 
+    width: 286px;
+    height: 205px;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &-subtitle {
+    text-transform: uppercase;
+    @include _768{
+        margin-bottom: 61px;
+        }
+    @include _992{
+    margin-bottom: 46px;
+    }
+    margin-bottom: 42px;
+  }
+  &-modal-img {
+    @include _767{
+        margin-bottom: 44px;
+    }
+  }
+  &-title {
+    @include _992{
+    margin-bottom: 94px;
+    }
+    margin-bottom: 34px;
+  }
+  &-topic-title {
+    @include _768{
+        margin-bottom: 12px;
+        }
+    @include _992{
+    margin-bottom: 22px;
+    }
+    margin-bottom: 9px;
+    max-width: 417px;
+  }  
+}

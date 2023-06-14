@@ -1,0 +1,288 @@
+.kyz-header {
+  &-section {
+    padding: 28px 0 28px;
+    background: var(--light-green);
+    @include _768 {
+      padding: 34px 0 28px;
+    }
+    @include _992 {
+      padding: 65px 0 64px;
+    }
+    .kyz-container {
+      @media screen and (max-width:365px) {
+        padding-left: 25px;
+        padding-right: 25px;
+      }
+      @media screen and (max-width:345px) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+  &-wrapper {
+    display: flex;
+    @include _992 {
+      align-items: center;
+    }
+    @include _991 {
+      flex-direction: column;
+      gap: 30px;
+    }
+    @include _767{
+      gap: 0;
+      flex-direction: row;
+    }
+  }
+  &-brand-box {
+    &__logo {
+      display: block;
+      width: 105px;
+      height: 26px;
+      @include _768 {
+        width: 166px;
+        height: 42px;
+      }
+      @include _992 {
+        width: 236px;
+        height: 60px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &__nav {
+    flex: 1 0 1;
+    flex-grow: 1;
+    position: relative;
+    &--body {
+      display: flex;
+      align-items: center;
+      @include _767{
+        justify-content: flex-end;
+      }
+    }
+    &--list {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      @include _992 {
+        padding-left: 30px;
+        padding-right: 35px;
+      }
+      @include _991 {
+        padding-left: 0px;
+        padding-right: 0px;
+        justify-content: space-between;
+      }
+      @include _767 {
+        display: none;
+      }
+      li {
+        a {
+          padding: 0 13px;
+          font-family: var(--primary-font);
+          font-style: normal;
+          font-weight: 900;
+          font-size: 18px;
+          line-height: 22px;
+          text-transform: uppercase;
+          color: var(--dark-green);
+          @include _991 {
+            font-size: 16px;
+            line-height: 19px;
+            padding: 0;
+          }
+        }
+        &:last-child a {
+          padding-right: 0;
+        }
+        &:first-child a {
+          padding-left: 0;
+        }
+      }
+    }
+    &--wrap {
+      display: flex;
+      align-items: center;
+      @include _991 {
+        position: absolute;
+        right: 0;
+        top: -80px;
+      }
+      @include _767{
+        top: 0;
+        position: relative;
+      }
+    }
+    &--message {
+      position: relative;
+      margin-left: 44px;
+      @include _991 {
+        margin-left: 30px;
+      }
+      @include _767{
+        display: none;
+      }
+      .chat-btn {
+        svg {
+          fill: var(--dark-green);
+        }
+      }
+      &::before {
+        position: absolute;
+        content: '';
+        right: -7px;
+        top: -6px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50px;
+        background-color: var(--lime-color);
+        border: 2px solid var(--light-green);
+      }
+    }
+    &--search {
+      position: relative;
+      margin-left: 28px;
+      @include _767{
+        display: none;
+      }
+      &--input {
+        max-width: 140px;
+        width: 100%;
+        background: var(--white);
+        border-radius: 50px;
+        height: 40px;
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+      &--submit {
+        background: var(--white);
+        bottom: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 5;
+        padding-right: 12px;
+        border-radius: 0px 50px 50px 0;
+        svg {
+          fill: var(--dark-green);
+        }
+      }
+    }
+  }
+  &__account {
+    display: flex;
+    align-items: center;
+    &--user {
+      min-width: 27px;
+      height: 27px;
+      width: 27px;
+      @include _768 {
+        min-width: 42px;
+        height: 42px;
+        width: 42px;
+      }
+      @include _992 {
+        min-width: 60px;
+        height: 60px;
+        width: 60px;
+      }
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      background: var(--lime-color);
+      svg {
+        fill: var(--dark-green);
+        min-width: 13px;
+        height: 15px;
+        width: 13px;
+        @include _768 {
+          min-width: 16px;
+          height: 19px;
+          width: 16px;
+        }
+        @include _992 {
+          min-width: 21px;
+          height: 26px;
+          width: 21px;
+        }
+      }
+    }
+
+    &--cart {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      justify-content: space-between;
+      padding-left: 20px;
+      padding-right: 19px;
+      min-width: 152px;
+      width: 152px;
+      height: 60px;
+      background: var(--lime-color);
+      border-radius: 50px;
+      margin-left: 11px;
+      @include _991 {
+        padding-left: 14px;
+      padding-right: 14px;
+      min-width: 123px;
+        height: 42px;
+        width: 123px;
+      }
+      @include _767{
+       margin-left: 9px;
+       padding-left: 8px;
+       padding-right: 8px;
+       min-width: 88px;
+       width: 88px;
+         height: 27px;
+         gap: 0;
+      }
+      span {
+        font-family: var(--primary-font);
+        font-style: normal;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        color: var(--dark-green);
+        @include _768 {
+          font-size: 16px;
+          line-height: 19px;
+        }
+        @include _992 {
+          font-size: 18px;
+          line-height: 22px;
+        }
+      }
+      svg {
+        fill: var(--dark-green);
+        min-width: 18px;
+        height: 15px;
+        width: 18px;
+        @include _768 {
+          min-width: 23px;
+          height: 19px;
+          width: 23px;
+        }
+        @include _992 {
+          min-width: 30px;
+          height: 25px;
+          width: 30px;
+        }
+      }
+    }
+  }
+ &__burger{
+  @include _768{
+    display: none;
+  }
+  background: transparent;
+  margin-left: 16px;
+ }
+}

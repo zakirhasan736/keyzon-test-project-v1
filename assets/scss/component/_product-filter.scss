@@ -1,0 +1,106 @@
+.kyz-product-filter-widgets {
+    background: var(--white);
+    padding: 35px 12px 48px 15px;
+    @include _991{
+        display: none;
+    }
+    &.filter-on-tablet{
+        display: none;
+        @include _768{
+            display: block;
+            }
+        @include _992{
+        display: none;
+        }
+    }
+  }
+
+.kyz-product-filter-widgets {
+    .filter-product-title {
+        margin-bottom: 25px;
+        text-transform: uppercase;
+      }
+}
+.filter-category-list {
+    margin-bottom: 22px;
+   > li{
+        list-style: disc;
+    }
+    li {
+        font-family: var(--primary-font);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: var(--black);
+        margin-bottom: 10px;
+      }
+}
+
+.filter-category-list {
+        padding-left: 16px;
+    .filter-cat-list-item {
+        .filter-button {
+            font-family: var(--primary-font);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: var(--black);
+            background-color: transparent;
+            &.active-btn{
+              background-color: var(--light-green);
+              padding-left: 5px;
+              padding-right: 5px;
+            }
+          }
+    }
+}
+.filter-category-list {
+    li{
+        &::marker {
+            color: var(--light-green);
+          }
+    }
+}
+.filter-category-list{
+    li {
+        > ul {
+            padding-left: 39px;
+            margin-top: 10px;
+          }
+    }
+}
+
+.price-filter-input-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    input {
+        padding: 20px 13px;
+        border: 3px solid var(--dark-green);
+        width: 100%;
+        font-family: var(--primary-font);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        @include _767{
+            font-size: 14px;
+            line-height: 17px;
+        }
+        color: var(--dark-green);
+        &::placeholder{
+            font-family: var(--primary-font);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            @include _767{
+                font-size: 14px;
+                line-height: 17px;
+            }
+            color: var(--dark-green);
+        }
+      }
+  }

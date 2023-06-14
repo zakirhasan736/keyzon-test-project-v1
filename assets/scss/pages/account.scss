@@ -1,0 +1,592 @@
+.kyz-main-body-content-wrap {
+  &.account--page {
+    .kyz-account--page {
+      padding-top: 111px;
+      padding-bottom: 156px;
+      @include _991 {
+        padding-bottom: 77px;
+        padding-top: 49px;
+      }
+      @include _767 {
+        padding-top: 26px;
+      }
+      .kyz-container {
+        @include _991 {
+          padding: 0 6px;
+        }
+        @include _991 {
+          padding: 0 4px;
+        }
+      }
+      .kyz-account-title-box {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 149px;
+        @include _991 {
+          padding-left: 48px;
+          padding-right: 48px;
+          margin-bottom: 49px;
+        }
+        @include _767 {
+          padding-left: 38px;
+          padding-right: 38px;
+          margin-bottom: 70px;
+        }
+        > .kyz-account-sidebar-link-content {
+          display: none;
+          padding: 0 !important;
+          @media screen and (max-width: 991px) and (min-width: 768px) {
+            display: block;
+          }
+        }
+      }
+
+      .kyz-account-sidebar-link-content {
+        display: none;
+        @include _992 {
+          display: block;
+        }
+        padding: 35px 15px;
+        .kyz-link-items-title {
+          margin-bottom: 24px;
+        }
+        .kyz-account-link-item {
+          padding-left: 12px;
+          li {
+            &:not(:last-child) {
+              margin-bottom: 5px;
+            }
+            list-style-type: disc;
+            a {
+              font-family: var(--primary-font);
+              font-style: normal;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 34px;
+              color: var(--black);
+              @include _767 {
+                font-size: 14px;
+                line-height: 17px;
+              }
+            }
+          }
+        }
+        .kyz-account-logout-btn {
+          font-family: var(--primary-font);
+          font-style: normal;
+          font-weight: 900;
+          font-size: 18px;
+          line-height: 22px;
+          margin-top: 30px;
+          background-color: transparent;
+          @include _767 {
+            font-size: 14px;
+            line-height: 17px;
+          }
+          text-transform: uppercase;
+          color: var(--dark-green);
+        }
+      }
+      .kyz-account-content-wrapper {
+        @include _992 {
+          display: grid;
+          grid-template-columns: 300px auto;
+          grid-column-gap: 20px;
+          &.guest-order-details{
+          grid-template-columns: 100%;
+          }
+        }
+      }
+      .kyz-account-main-content-box {
+        .kyz-account-links-card-box {
+          padding: 80px;
+          @include _991 {
+            padding: 68px 48px;
+          }
+          @include _767 {
+            padding: 54px 38px;
+          }
+          background-color: var(--light-yellow);
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          @include _767 {
+            grid-template-columns: repeat(1, 1fr);
+          }
+          gap: 24px;
+          .kyz-account-link-card {
+            padding: 26px 27px 30px 30px;
+            background-color: var(--dark-green);
+            height: 194px;
+            position: relative;
+            @include _767 {
+              height: 131px;
+            }
+            .kyz-link-card-title-box {
+              display: flex;
+              align-items: flex-start;
+              justify-content: space-between;
+              .kyz-link-card-title {
+                color: var(--white);
+              }
+              img {
+                @include _991 {
+                  width: 62px;
+                  height: 50px;
+                }
+                @include _767 {
+                  width: 35px;
+                  height: 28px;
+                }
+              }
+            }
+            .kyz-card-bottom-text {
+              position: absolute;
+              bottom: 30px;
+              left: 30px;
+              color: var(--white);
+            }
+          }
+        }
+        .kyz-order-history-details-cont {
+          .kyz-order-details-item:not(:last-child) {
+            margin-bottom: 42px;
+          }
+          .kyz-order-date {
+            margin-bottom: 16px;
+            padding-left: 75px;
+            @include _991 {
+              margin-bottom: 35px;
+              padding-left: 54px;
+            }
+            @include _767 {
+              margin-bottom: 14px;
+              padding-left: 42px;
+            }
+          }
+          .kyz-order-details {
+            padding: 28px 75px 34px;
+            background-color: var(--light-yellow);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &:not(:last-child) {
+              margin-bottom: 16px;
+            }
+            @include _991 {
+              padding: 31px 37px 34px;
+            }
+            @include _767 {
+              padding: 36px 38px 40px;
+              flex-wrap: wrap;
+              row-gap: 19px;
+            }
+            li {
+              font-family: var(--primary-font);
+              font-style: normal;
+              font-weight: 900;
+              font-size: 22px;
+              line-height: 26px;
+              @include _767 {
+                font-size: 14px;
+                line-height: 17px;
+                flex: 0 0 49%;
+                &:nth-child(even) {
+                  text-align: right;
+                  justify-content: right;
+                }
+              }
+              text-transform: uppercase;
+              color: var(--dark-green);
+              &.price-total {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                > span {
+                  display: none;
+                  @include _992 {
+                    display: block;
+                  }
+                }
+                .kyz-product-price {
+                  margin-bottom: 0px;
+                  @include _991 {
+                    display: block;
+                    text-align: center;
+                  }
+                  @include _767 {
+                    display: flex;
+                  }
+                }
+              }
+              &:last-child {
+                @include _991 {
+                  max-width: 114px;
+                }
+                a {
+                  color: var(--dark-green);
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .kyz-category-product-section {
+      margin-bottom: 121px;
+      @include _991 {
+        margin-bottom: 100px;
+      }
+      @include _767 {
+        margin-bottom: 65px;
+      }
+    }
+    .kyz-product-cta-section {
+      margin-bottom: 162px;
+      @include _991 {
+        margin-bottom: 124px;
+      }
+      @include _767 {
+        margin-bottom: 82px;
+      }
+    }
+
+    .kyz-account-settings-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      @include _991 {
+        grid-column-gap: 12px;
+        grid-row-gap: 12px;
+      }
+      @include _767 {
+        grid-column-gap: 11px;
+        grid-row-gap: 11px;
+        grid-template-columns: 1fr;
+      }
+      .kyz-account-settings-items-card {
+        padding: 66px 80px;
+        @include _991 {
+          padding: 51px 48px 45px;
+        }
+        @include _767 {
+          padding: 39px 38px 40px;
+        }
+        position: relative;
+        background: var(--light-yellow);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        @include _991 {
+          grid-template-columns: 1fr;
+          gap: 30px;
+        }
+        &.changed-states {
+          display: grid;
+          grid-column: 1/3;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          @include _991 {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          @include _767 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+          }
+          gap: 20px;
+          .kyz-account-content-box {
+            grid-column: 1/3;
+            grid-row: 1;
+          }
+          .kyz-input-group:nth-child(2) {
+            grid-column: 1;
+            grid-row: 2;
+          }
+          .kyz-input-group:nth-child(3) {
+            grid-column: 2;
+            grid-row: 2;
+          }
+          .kyz-button {
+            grid-column: 3;
+            grid-row: 2;
+            max-width: 100%;
+            @include _991 {
+              grid-column: 2;
+              grid-row: 3;
+            }
+          }
+          .kyz-input-group {
+            .kyz-button {
+              position: absolute;
+              top: 0;
+              width: 45%;
+              right: 0;
+            }
+          }
+          &.four-column-states {
+            :nth-child(4) {
+              grid-column: 3;
+              grid-row: 2;
+              @include _991 {
+                grid-column: 2;
+                grid-row: 3;
+              }
+            }
+            .kyz-input-group:nth-child(3) {
+              grid-column: 2;
+              grid-row: 2;
+              @include _991 {
+                grid-column: 1;
+                grid-row: 3;
+              }
+            }
+            .kyz-button {
+              grid-column: 3;
+              grid-row: 3;
+              @include _991 {
+                grid-column: 2;
+                grid-row: 4;
+              }
+            }
+          }
+        }
+        &.changed-states-msg {
+          display: grid;
+          grid-column: 1/3;
+          grid-template-columns: repeat(auto-fill, minmax(2, 1fr));
+          gap: 20px;
+          justify-content: space-between;
+          @include _767 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+          }
+          .kyz-account-content-box {
+            grid-column: 1/3;
+            grid-row: 1;
+          }
+          .kyz-input-group-content-box {
+            grid-column: 1;
+            grid-row: 2;
+          }
+          .kyz-button {
+            grid-column: 2;
+            grid-row: 2;
+            max-width: 351px;
+            min-width: 295px;
+            margin-left: 0;
+          }
+        }
+        .kyz-account-content-box {
+          .kyz-account-label {
+            font-family: var(--primary-font);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: uppercase;
+            color: var(--dark-green);
+            margin-bottom: 6px;
+          }
+          .kyz-account-input-name {
+            font-family: var(--primary-font);
+            font-style: normal;
+            font-weight: 900;
+            font-size: 20px;
+            line-height: 30px;
+            text-transform: uppercase;
+            color: var(--dark-green);
+          }
+        }
+      }
+    }
+    .kyz-input-group-content-box {
+      .kyz-success-title {
+        font-weight: 900;
+        color: var(--dark-green);
+      }
+      .kyz-input-text {
+        color: var(--dark-green);
+        a {
+          font-weight: 900;
+          color: var(--dark-green);
+        }
+      }
+    }
+    .kyz-account-title-box .kyz-account-title {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      @include _991 {
+        max-width: 357px;
+      }
+    }
+    .kyz-feature-slide-section {
+      margin-bottom: 172px;
+      @include _991 {
+        margin-bottom: 121px;
+      }
+      @include _767 {
+        margin-bottom: 71px;
+      }
+    }
+    .kyz-payment-confirmation {
+      position: relative;
+      padding: 79px 80px;
+      @include _991 {
+        padding: 71px 51px 78px;
+      }
+      @include _767 {
+        padding: 43px 34px 45px;
+      }
+      background: var(--light-yellow);
+      .kyz-payment-top-cont {
+        .kyz-payment-desc {
+          max-width: 541px;
+          a {
+            font-weight: 900;
+            color: var(--dark-green);
+          }
+        }
+        .kyz-payment-title {
+          margin-bottom: 18px;
+        }
+      }
+      .kyz-payment-bottom-cont {
+        margin-top: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+          font-family: var(--primary-font);
+          font-style: normal;
+          font-weight: 900;
+          font-size: 22px;
+          line-height: 26px;
+          @include _767 {
+            font-size: 16px;
+            line-height: 19px;
+          }
+          text-transform: uppercase;
+          color: var(--dark-green);
+        }
+        .kyz-payment-view-btn {
+          font-family: var(--primary-font);
+          font-style: normal;
+          font-weight: 900;
+          font-size: 22px;
+          line-height: 26px;
+          background-color: transparent;
+          @include _767 {
+            font-size: 16px;
+            line-height: 19px;
+          }
+          text-decoration-line: underline;
+          text-transform: uppercase;
+          color: var(--dark-green);
+        }
+      }
+    }
+    .kyz-checkout-details-confirmation {
+      padding: 63px 80px 83px;
+      position: relative;
+      background: var(--light-yellow);
+      @include _991 {
+        padding: 59px 48px 70px;
+      }
+      @include _767 {
+        padding: 42px 38px 50px;
+      }
+      .large-text {
+        font-weight: 900;
+        color: var(--dark-green);
+        text-transform: uppercase;
+        margin-bottom: 45px;
+      }
+      .kyz-checkout-items {
+        margin-bottom: 55px;
+        li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 0;
+          font-family: var(--primary-font);
+          font-style: normal;
+          font-weight: 900;
+          font-size: 18px;
+          line-height: 22px;
+          text-transform: uppercase;
+          color: var(--dark-green);
+          &:not(:last-child) {
+            border-bottom: 1px solid var(--dark-green);
+          }
+          &:last-child {
+            border-top: 3px solid var(--dark-green);
+            .kyz-product-total {
+              margin-left: auto;
+            }
+          }
+          .kyz-products-name {
+            @include _991 {
+              max-width: 373px;
+              display: flex;
+              gap: 10px;
+            }
+            @include _767 {
+              font-size: 14px;
+              line-height: 17px;
+            }
+          }
+          .kyz-products-price{
+            @include _767 {
+              font-size: 14px;
+              line-height: 17px;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+      .kyz-checkout-payment-btn-box {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 43px;
+        @include _767{
+          flex-direction: column-reverse;
+          gap: 15px;
+        }
+        .kyz-button {
+          margin-right: 0;
+          margin-left: 0;
+          &:first-child {
+            background-color: #b3b3b3;
+            max-width: 380px;
+          }
+          &:last-child {
+            max-width: 380px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-transform: capitalize;
+            color: var(--black);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+          }
+        }
+      }
+    }
+    &.order-details--page {
+      .kyz-account-title-box {
+        margin-bottom: 99px;
+        @include _991{
+          margin-bottom: 113px;
+        }
+        @include _767{
+          margin-bottom:70px;
+        }
+      }
+    }
+  }
+}

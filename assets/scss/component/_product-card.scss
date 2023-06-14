@@ -1,0 +1,125 @@
+.kyz-product {
+  &-cards-item {
+    background: var(--white);
+    padding: 15px 14px 22px 15px;
+    @include _768 {
+      padding: 33px 19px 21px 20px;
+    }
+    @include _992 {
+      padding: 33px 19px 20px 15px;
+    }
+    position: relative;
+    &.active-card {
+      border: 3px solid var(--lime-color);
+    }
+    .kyz-button {
+      height: 44px;
+      color: var(--white) !important;
+      padding-bottom: 13px;
+      padding-top: 13px;
+
+      @include _768 {
+        height: 58px;
+        padding-bottom: 19px;
+        padding-top: 19px;
+      }
+      @include _767 {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+  &-category {
+    margin-bottom: 9px;
+    @include _768 {
+      margin-bottom: 18px;
+    }
+    @include _992 {
+      margin-bottom: 16px;
+    }
+  }
+  &-title {
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    @include _768 {
+      margin-bottom: 25px;
+      max-width: 219px;
+    }
+    @include _992 {
+      margin-bottom: 17px;
+    }
+  }
+  &-img-modal {
+    width: 106.54px;
+    height: 129.08px;
+    margin-bottom: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    @include _768 {
+      width: 100%;
+      height: 283.45px;
+      margin-bottom: 0;
+    }
+  }
+  &-price {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    @include _768 {
+      margin-bottom: 28px;
+    }
+    .product-price {
+      font-family: var(--primary-font);
+      font-style: normal;
+      font-weight: 900;
+      font-size: 22px;
+      line-height: 26px;
+      color: var(--black);
+      @include _767 {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+    .discount-price {
+      font-family: var(--primary-font);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      @include _768 {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      color: var(--black);
+      text-decoration: line-through;
+    }
+    .current-price {
+      font-family: var(--primary-font);
+      font-style: normal;
+      font-weight: 900;
+
+      font-size: 16px;
+      line-height: 19px;
+
+      @include _768 {
+        font-size: 22px;
+        line-height: 26px;
+      }
+      color: var(--dark-green);
+      width: 73px;
+      height: 26px;
+      @include _768 {
+        width: 118px;
+        height: 36px;
+      }
+      display: flex;
+      border-radius: 30px;
+      background: var(--lime-color);
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

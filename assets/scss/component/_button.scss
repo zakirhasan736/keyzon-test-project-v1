@@ -1,0 +1,33 @@
+.kyz-button {
+  @include _768 {
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 295px;
+    height: 74px;
+  padding: 26px 22px 26px 24px;
+  }
+  width: 100%;
+  padding: 13px 22px 13px 24px;
+  height: 45px;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 295px;
+  display: inline-block;
+  &._lime-button {
+    background: var(--lime-color);
+    color: var(--dark-green) !important;
+  }
+  &._dark-green-button {
+    background: var(--dark-green);
+    color: var(--light-green) !important;
+  }
+  &._light-green-button {
+    background: var(--light-green);
+    color: var(--dark-green) !important;
+  }
+}

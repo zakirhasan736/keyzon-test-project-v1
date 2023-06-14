@@ -1,0 +1,119 @@
+/* =======>>>cookie policy content */
+.kyz-cookie-policy-content-wrap {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: var(--dark-green);
+    padding: 78px 0 70px;
+    z-index: 999;
+    &.active {
+      animation: cookie-up 1s linear 5s forwards;
+    }
+    .kyz-container {
+      display: flex;
+      gap: 51px;
+      align-items: flex-end;
+    }
+    .kyz-cookie-text-content {
+      .kyz-cookie-title {
+        font-family: var(--primary-font);
+        font-style: normal;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 40px;
+        color: var(--white);
+        margin-bottom: 28px;
+        text-transform: uppercase;
+      }
+      .kyz-cookie-desc {
+        font-family: var(--primary-font);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+        color: var(--white);
+        margin-bottom: 0;
+        max-width: 668px;
+        width: 100%;
+      }
+    }
+    .kyz-cookie-button-content {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      .kyz-user-action-button {
+        width: 220px;
+        height: 74px;
+        font-family: var(--primary-font);
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: var(--dark-green);
+        background: var(--light-green);
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+  }
+  @keyframes cookie-up {
+    100% {
+      bottom: 0;
+    }
+  }
+
+  @media screen and (max-width: 1420px) {
+    .kyz-cookie-policy-content-wrap {
+      padding-left: 38px;
+      padding-right: 38px;
+    }
+  }
+  @media screen and (max-width: 1420px) and (min-width: 992px) {
+    .kyz-cookie-policy-content-wrap{
+      .kyz-cookie-button-content{
+        .kyz-user-action-button {
+          width: 135px;
+          height: 55px;
+        }
+      }
+    }
+      
+  }
+  @media screen and (max-width: 991px) {
+    .kyz-cookie-policy-content-wrap {
+      .kyz-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+      }
+    }
+    .kyz-cookie-policy-content-wrap {
+      .kyz-cookie-button-content {
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+      }
+    }
+    .kyz-cookie-policy-content-wrap {
+      .kyz-cookie-button-content {
+        button {
+          width: 100% !important;
+          height: 58px !important;
+        }
+      }
+    }
+    .kyz-cookie-policy-content-wrap {
+      padding-top: 38px;
+      padding-bottom: 38px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .kyz-cookie-policy-content-wrap {
+      .kyz-cookie-button-content {
+        flex-direction: column;
+      }
+    }
+  }

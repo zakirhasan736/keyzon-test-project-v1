@@ -1,0 +1,219 @@
+.kyz-news {
+  &-section {
+    position: relative;
+    padding-top: 142px;
+    padding-bottom: 155px;
+    @include _991 {
+      padding-top: 70px;
+      padding-bottom: 87px;
+    }
+    @include _767 {
+      padding-top: 45px;
+      padding-bottom: 43px;
+    }
+    .kyz-container {
+      @include _991 {
+        padding-left: 6px;
+        padding-right: 6px;
+      }
+      @include _767 {
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+    }
+  }
+  &-wrapper {
+    position: relative;
+    padding: 47px 42px 63px;
+    background-color: var(--light-yellow);
+    @include _768 {
+      padding: 63px 54px 61px;
+    }
+    @include _992 {
+      padding: 108px 160px 88px;
+    }
+  }
+  &-subtitle {
+    margin-bottom: 85px;
+    @include _991 {
+      margin-bottom: 45px;
+    }
+  }
+  &-feature--box {
+    display: grid;
+    grid-row-gap: 46px;
+    grid-template-columns: 1fr;
+    @include _768 {
+      grid-row-gap: 57px;
+      grid-column-gap: 51px;
+      grid-template-columns: 1fr 1fr;
+    }
+    @include _992 {
+      grid-row-gap: 44px;
+      grid-column-gap: 79px;
+    }
+  }
+  &-feature-card {
+    .kyz-news-card-title {
+      a {
+        color: var(--dark-green);
+      }
+    }
+
+    .kyz-news-main-cont {
+      margin-top: 34px;
+      display: flex;
+      align-items: flex-start;
+      column-gap: 19px;
+      @include _991 {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 19px;
+      }
+    }
+
+    .kyz-news-link-btn {
+      margin-top: 20px;
+      display: block;
+      margin-left: auto;
+      text-align: right;
+      color: var(--dark-green);
+      font-family: var(--primary-font);
+      font-style: normal;
+      font-weight: 900;
+      font-size: 14px;
+      line-height: 17px;
+      @include _991 {
+        text-align: left;
+      }
+      @include _767 {
+        font-size: 12px;
+        line-height: 14px;
+        text-align: right;
+      }
+      text-transform: uppercase;
+    }
+    .kyz-news-modal-img {
+      max-width: 298px;
+      width: 100%;
+      height: 127px;
+      @include _768{
+        width: 220px;
+        height: 140px;
+      }
+      @include _992{
+        width: 220px;
+        height: 140px;
+      }
+    }
+  }
+}
+.kyz-news-post-time {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  @include _767 {
+    font-size: 12px;
+    line-height: 14px;
+    width: 90px;
+    height: 22px;
+  }
+  color: var(--dark-green);
+  border-radius: 30px;
+  background-color: var(--lime-color);
+  display: block;
+  max-width: 103px;
+  display: flex;
+  justify-content: center;
+  height: 27px;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.kyz-news-single--item {
+  padding-bottom: 160px;
+  position: relative;
+  @include _991 {
+    padding-bottom: 94px;
+  }
+  @include _767 {
+    padding-bottom: 106px;
+  }
+}
+.kyz-news-single-title {
+  margin-bottom: 65px;
+  font-size: 32px;
+  line-height: 38px;
+  a{color: var(--dark-green);}
+  @include _991 {
+    margin-bottom: 15px;
+  }
+  @include _767 {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+}
+.kyz-news-single-blog-img {
+  margin-top: 65px;
+  margin-bottom: 65px;
+  width: 100%;
+  @include _991 {
+    margin-top: 44px;
+    margin-bottom: 44px;
+  }
+  height: 214px;
+  @include _768 {
+    object-fit: cover;
+    width: 659px;
+    height: 233px;
+  }
+  @include _992 {
+    width: 1260px;
+    height: 447px;
+  }
+}
+.large-text.kyz-news-single-description {
+  margin-bottom: 52px;
+  @include _991 {
+    margin-bottom: 50px;
+  }
+  @include _767 {
+    margin-bottom: 44px;
+  }
+}
+
+.kyz-news-pagination{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .kyz-news-pagination-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    @include _767 {
+      font-size: 14px;
+      line-height: 17px;
+      max-width: 166px;
+      gap: 5px;
+    }
+    text-transform: uppercase;
+    color: var(--dark-green);
+    &:nth-child(2) {
+      text-align: right !important;
+    }
+  }
+}
+.kyz-angle img {
+  @include _767 {
+    width: 15px;
+    height: 30px;
+  }
+}

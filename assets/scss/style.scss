@@ -1,10 +1,46 @@
 // common settings styles
 @import "mixins";
+@import "global";
 @import "variables";
 
 // component styles
+@import "component/button";
+@import "component/breadcrumb";
+@import "component/cookies";
+@import "component/product-filter";
+@import "component/product-card";
+@import "component/newsletter";
+@import "component/header";
+@import "component/banner";
+@import "component/about";
+@import "component/sale-week";
+@import "component/cta";
+@import "component/product-cta";
+@import "component/benefit";
+@import "component/feature-card";
+@import "component/product-category";
+@import "component/article";
+@import "component/feedback"; 
+@import "component/news"; 
+@import "component/block-content"; 
+@import "component/product-overview"; 
+@import "component/related-product";
+@import "component/cart";
+@import "component/footer";
 
 // pags styles
-@import "pages/home.scss";
+@import "pages/authentication.scss"; 
+@import "pages/reset-password.scss"; 
+@import "pages/home.scss"; 
+@import "pages/about.scss"; 
 @import "pages/article.scss";
+@import "pages/article-details.scss";
+@import "pages/collection.scss";
+@import "pages/news.scss";
+@import "pages/news-details.scss";
+@import "pages/product-details.scss";
+@import "pages/faq.scss";
+@import "pages/search-product.scss";
+@import "pages/term-service.scss";
+@import "pages/account.scss";
 

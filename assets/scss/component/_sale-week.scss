@@ -1,0 +1,77 @@
+.kyz-sale-week {
+  &-section {
+    position: relative;
+
+    .kyz-container_large {
+      @include _991 {
+        padding-left: 6px;
+        padding-right: 6px;
+      }
+      @include _991 {
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+    }
+  }
+  &-wrapper {
+    padding: 58px 0px 66px 0px;
+    background: var(--light-yellow);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 7px;
+    @include _768 {
+      padding: 66px 48px 73px 47px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 12px;
+    }
+    @include _992 {
+      padding: 79px 78px 76px 79px;
+      grid-template-columns: repeat(5, 1fr);
+      grid-column-gap: 20px;
+      grid-row-gap: 0px;
+    }
+    .kyz-product {
+      &-cards-item {
+        &:last-child {
+            @include _991{
+          display: none;
+        }
+        }
+      }
+    }
+  }
+  &-banner {
+    position: relative;
+    background: var(--lime-color);
+    padding: 67px 25px 49px 18px;
+    min-width: 300px;
+    @include _991 {
+      padding: 67px 44px 49px 23px;
+    }
+    @include _767 {
+      padding: 44px 38px 73px 16px;
+      min-width: 182px;
+    }
+  }
+ &-link {
+	font-family: var(--primary-font);
+	font-style: normal;
+	font-weight: 900;
+	font-size: 18px;
+	line-height: 22px;
+	text-transform: uppercase;
+	color: var(--dark-green);
+	position: absolute;
+	bottom: 35px;
+	left: 16px;
+    @include _991{
+        left: 23px;
+    }
+    @include _767{
+        font-size: 12px;
+        line-height: 14px; 
+        left: 16px;
+    }
+}
+}

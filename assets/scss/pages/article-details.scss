@@ -1,0 +1,75 @@
+.kyz-main-body-content-wrap{
+    &.article-details--page{
+        .kyz-articles-section {
+            padding-top: 111px;
+        }
+        .kyz-articles-single--item {
+            .kyz-article-single-title {
+                max-width:100%;
+                @include _992{
+                    font-size: 60px;
+                }
+            }
+        }
+        .kyz-articles-section {
+            .newsletter-section {
+                margin-bottom: 148px;
+                @include _991{
+                    margin-bottom: 85px;
+                }
+                @include _767{
+                    margin-bottom: 56px;
+                }
+            }
+        }
+        .kyz-articles-feature-left-cont {
+            .kyz-articles-feature-card{
+                &:first-child {
+                    margin-bottom: 100px;
+                    @include _991{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .kyz-product-cta-section {
+            margin-bottom: 170px;
+            @include _991{
+                margin-bottom: 112px;
+            }
+            @include _767{
+                margin-bottom: 60px;
+            }
+            
+        }
+        .newsletter-section {
+            .newsletter-wrapper {
+                .newsletter {
+                    grid-template-columns: repeat(3, 1fr);
+                    @include _991{
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    @include _767{
+                        grid-template-columns: 1fr;
+                    }
+                    .newsletter--submit {
+                        grid-column: 3;
+                        grid-row: 1;
+                        @include _992{
+                            min-width: 301px;
+                        }
+                        @include _991{
+                            grid-column: 2;
+                            grid-row: 2;
+                        }
+                        @include _767{
+                            grid-column: 1;
+                            grid-row: 4;
+                        }
+                    }
+                }
+            }
+        }
+      
+    }
+}

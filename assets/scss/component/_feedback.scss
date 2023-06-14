@@ -1,0 +1,96 @@
+.kyz-feedback {
+  &-section {
+    position: relative;
+    padding-top: 91px;
+    padding-bottom: 117px;
+
+    @include _768 {
+      padding-top: 66px;
+      padding-bottom: 100px;
+    }
+    @include _992 {
+        padding-top: 142px;
+        padding-bottom: 154px;
+      }
+  }
+  &-main-wrapper {
+    .kyz-feedback-subtitle {
+      margin-bottom: 58px;
+    }
+  }
+
+  &-card-text-cont {
+    height: auto;
+    max-width: 460px;
+    padding: 21px 16px 16px 16px;
+    position: relative;
+    border: 3px solid #00d198;
+    background-color: var(--white);
+    @include _768{
+    padding: 21px 16px 48px 31px;
+    }
+    @include _992{
+    padding: 23px 13px 49px 33px;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: 10px;
+      bottom: 1px;
+      border-left: 14px solid transparent;
+      border-right: 14px solid transparent;
+      border-top: 23px solid var(--white);
+      -webkit-transform: translate(0, 100%);
+      transform: translate(0, 100%);
+      -webkit-filter: drop-shadow(2px 2px 0 #00d198)
+        drop-shadow(-2px 2px 0 #00d198);
+      filter: drop-shadow(2px 2px 0 #00d198) drop-shadow(-2px 2px 0 #00d198);
+    }
+  }
+  // &::before{}
+
+  &-star-widgets {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+  }
+  &-card-title {
+    text-transform: uppercase;
+    max-width: 341px;
+  }
+  &-user-model {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin-top: 38px;
+    padding-left: 16px;
+    .kyz-user-name {
+      font-family: var(--primary-font);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+    }
+  }
+  &-content-box {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 47px;
+    grid-template-columns: repeat(1, 1fr);
+    @include _768 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include _992 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  &-main-wrapper {
+    @include _992 {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
+}
+

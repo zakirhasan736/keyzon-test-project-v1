@@ -1,0 +1,102 @@
+.kyz-category {
+  &-product-section {
+    .kyz-container {
+      @include _991 {
+        padding-left: 6px;
+        padding-right: 6px;
+      }
+      @include _767 {
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+
+      .kyz-button {
+        margin-left: 0;
+      }
+    }
+  }
+  &-product-wrap {
+    padding: 81px 80px 89px 80px;
+    position: relative;
+    background-color: var(--light-green);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    @include _991 {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 16px;
+      padding: 61px 54px 61px 54px;
+    }
+    @include _767 {
+      gap: 11px;
+      padding: 49px 38px 52px 37px;
+    }
+  }
+  &-product-wrap {
+    .kyz-product-img-modal {
+      @include _768 {
+        position: absolute;
+        width: 277px;
+        height: 277px;
+        right: 0;
+        top: 42px;
+      }
+      @include _992 {
+        width: 294px;
+        height: 294px;
+        top: 45px;
+      }
+    }
+    .kyz-feature-card {
+      height: 171px;
+      padding: 28px 30px 32px 38px;
+      max-width: 100%;
+      min-width: 100%;
+      @include _768 {
+        padding: 45px 22px 80px 46px;
+        height: 340px;
+      }
+      @include _992 {
+        padding: 45px 22px 94px 68px;
+        height: 357px;
+      }
+    }
+    .kyz-product-cards-item {
+      height: auto;
+      padding: 30px 37px 35px 37px;
+      @include _768 {
+        padding: 42px 25px 23px 48px;
+        height: 340px;
+      }
+      @include _992 {
+        padding: 45px 49px 39px 55px;
+        height: 357px;
+      }
+      .kyz-product-title {
+        @include _768 {
+          margin-bottom: 19px;
+        }
+        @include _992 {
+          margin-bottom: 54px;
+        }
+      }
+      .product-price {
+        @include _768 {
+          padding-right: 82px;
+        }
+      }
+      .kyz-product-price {
+        @include _767 {
+          justify-content: flex-end;
+        }
+        &-img-modal {
+          width: 192px;
+          height: 192px;
+          @include _768 {
+            height: 294px;
+          }
+        }
+      }
+    }
+  }
+}

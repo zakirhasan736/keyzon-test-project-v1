@@ -1,0 +1,24 @@
+.kyz-terms-section {
+	padding-top: 111px;
+	padding-bottom: 107px;
+    @include _991{
+        padding-top: 50px;
+        padding-bottom: 85px;  
+    }
+    @include _767{
+        padding-top: 40px;
+        padding-bottom: 70px;  
+    }
+    .kyz-term-main-content {
+        .kyz-term-title {
+            margin-bottom: 100px;
+            text-transform: uppercase;
+            @include _991{
+                margin-bottom: 50px; 
+            }
+        }
+     .kyz-term-desc-text-two {
+            margin-top: 50px;
+        }
+    }
+}

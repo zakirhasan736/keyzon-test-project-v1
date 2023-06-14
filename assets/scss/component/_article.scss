@@ -1,0 +1,163 @@
+.kyz-articles {
+  &-section {
+    position: relative;
+    padding-top: 155px;
+    padding-bottom: 154px;
+    @include _991 {
+      padding-top: 82px;
+      padding-bottom: 102px;
+    }
+    @include _767 {
+      padding-top: 86px;
+      padding-bottom: 98px;
+    }
+  }
+  &-wrapper {
+    @include _992 {
+      padding-left: 160px;
+      padding-right: 160px;
+    }
+  }
+  &-subtitle {
+    margin-bottom: 90px;
+  }
+  &-feature--box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 52px;
+    @include _768 {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 42px;
+    }
+    @include _992 {
+      grid-column-gap: 79px;
+    }
+  }
+  &-feature-card {
+    .kyz-article-title {
+      margin-bottom: 24px;
+      a {
+        color: var(--light-green);
+      }
+    }
+    .kyz-article-description {
+      margin-bottom: 24px;
+    }
+  }
+  &-feature-left-cont {
+    .kyz-article-title {
+      margin-bottom: 35px;
+      max-width: 500px;
+      a {
+        color: var(--light-green);
+      }
+    }
+    .kyz-article-modal-img {
+      margin-bottom: 35px;
+      width: 100%;
+      height: 100%;
+      @include _991{
+        max-width: 309px;
+        height: 154px;
+      }
+      @include _767{
+        max-width: 296px;
+        height: 148px;
+      }
+    }
+    .kyz-article-description {
+      margin-bottom: 43px;
+    }
+  }
+  &-feature-right-cont {
+    .kyz-articles-feature-card:not(:last-child) {
+      margin-bottom: 47px;
+      @include _768 {
+        margin-bottom: 46px;
+      }
+      @include _992 {
+        margin-bottom: 55px;
+      }
+    }
+    .kyz-article-modal-img {
+      margin-bottom: 35px;
+      width: 100%;
+      height: 100%;
+      @include _991{
+        max-width: 309px;
+        height: 154px;
+      }
+      @include _767{
+        max-width: 296px;
+        height: 148px;
+      }
+    }
+  }
+  &-single--item {
+    padding-bottom: 147px;
+    @include _991 {
+      padding-bottom: 100px;
+    }
+    @include _991 {
+      padding-bottom: 60px;
+    }
+    .kyz-article-single-title {
+      margin-bottom: 7px;
+      max-width: 760px;
+      a {
+        color: var(--light-green);
+      }
+    }
+    .kyz-article-date-time {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 110px;
+      height: 27px;
+      border-radius: 30px;
+      background: var(--lime-color);
+      font-family: var(--primary-font);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: var(--dark-green);
+    }
+    .kyz-article-single-modal-img {
+      margin-top: 60px;
+      height: 100%;
+      width: 100%;
+      @include _991 {
+        max-width: 660px;
+        height: 232px;
+        margin-top: 54px;
+      }
+      @include _767 {
+        max-width: 292px;
+        height: 150px;
+        margin-top: 38px;
+      }
+    }
+    .large-text.kyz-article-single-description {
+      margin-top: 60px;
+      @include _991 {
+        margin-top: 36px;
+      }
+      @include _767 {
+        margin-top: 47px;
+      }
+    }
+    .kyz-button {
+      margin-top: 37px;
+      margin-left: auto;
+      margin-right: 0;
+      display: block;
+      @include _991 {
+        margin-top: 55px;
+      }
+      @include _767 {
+        margin-top: 54px;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.kyz-feature {
+  &-slide-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 26px;
+    position: relative;
+    left: -550px;
+  }
+  &-card {
+    padding: 53px 72px 95px 72px;
+    position: relative;
+    background: var(--dark-green);
+    min-width: 700px;
+    max-width: 700px;
+    @include _767 {
+      min-width: 349px;
+      max-width: 349px;
+      padding: 26px 31px 39px 36px;
+    }
+    &.active-feature {
+      background-color: var(--light-green);
+      .main-title {
+        text-transform: uppercase;
+        color: var(--dark-green);
+      }
+    }
+    .main-title {
+      text-transform: uppercase;
+      color: var(--light-green);
+      max-width: 281px;
+      @include _768 {
+        font-size: 62px;
+        line-height: 74px;
+        max-width: 515px;
+      }
+      @include _992{
+      }
+     
+    }
+  }
+}

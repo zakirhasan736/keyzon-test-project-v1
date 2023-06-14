@@ -1,0 +1,188 @@
+.kyz-product-overview {
+  &-section {
+    position: relative;
+    padding-top: 71px;
+    @include _991 {
+      padding-top: 49px;
+    }
+    @include _767 {
+      padding-top: 40px;
+    }
+    .kyz-container_large {
+      @include _991 {
+        padding-left: 6px;
+        padding-right: 6px;
+      }
+      @include _767 {
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+    }
+    .kyz-all-products-main {
+      padding-bottom: 154px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      grid-column: 2;
+      &.product-intraction-two {
+        padding-bottom: 104px;
+      }
+    }
+    .kyz-read-more-btn {
+      font-family: var(--primary-font);
+      font-style: normal;
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+      color: var(--dark-green);
+      display: block;
+      background-color: transparent;
+      width: 100%;
+      grid-column: 2;
+      @include _767 {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+    &.collection-product--page {
+      .kyz-product-overview-wrapper {
+        background-color: var(--light-green);
+      }
+      .kyz-product-overview-main-content {
+        display: block;
+        .kyz-all-products-main {
+          padding-bottom: 0;
+        }
+      }
+      .kyz-product-overview-banner {
+        background-color: var(--dark-green);
+        .main-title {
+          color: var(--light-green);
+        }
+      }
+    }
+  }
+  &-main-content {
+    padding-left: 79px;
+    padding-right: 79px;
+    padding-bottom: 77px;
+
+    @include _992 {
+      display: grid;
+      grid-template-columns: 300px auto;
+    }
+    @include _991 {
+      padding-left: 47px;
+      padding-right: 47px;
+      padding-bottom: 85px;
+    }
+    @include _767 {
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-bottom: 45px;
+    }
+    .kyz-product-all-category-list {
+      padding-right: 20px;
+    }
+  }
+  &-wrapper {
+    background-color: var(--light-yellow);
+    @include _767 {
+      padding: 49px 38px 0px 37px;
+    }
+  }
+  &-banner {
+    height: 189px;
+    padding: 60px 79px;
+    background: var(--lime-color);
+    margin-bottom: 77px;
+    @include _991 {
+      height: 148px;
+      padding: 50px 53px;
+    }
+    @include _767 {
+      height: 171px;
+      padding: 28px 38px;
+      margin-bottom: 12px;
+    }
+  }
+  &-interaction {
+    padding-bottom: 154px;
+    grid-column: 2 span;
+  }
+}
+.kyz-product-overview-wrapper {
+  .kyz-product-top-header {
+    padding-bottom: 97px;
+    padding-left: 79px;
+    padding-right: 79px;
+  }
+}
+.kyz-main-body-content-wrap {
+  &.catelog--page {
+    .kyz-product-overview-wrapper {
+      background: transparent;
+    }
+  }
+}
+.kyz-product-overview-main-cont1 .kyz-product-all-category-list {
+  @include _992 {
+    display: block;
+  }
+  display: none;
+}
+
+.kyz-product-overview-section.catalog--page-products
+  .kyz-product-overview-main-content {
+  display: block;
+}
+.kyz-product-overview-section.catalog--page-products
+  .kyz-product-overview-main-content
+  .kyz-product-overview-main-cont1 {
+  @include _992 {
+    display: grid;
+    grid-template-columns: 300px auto;
+  }
+}
+.kyz-product-overview-main-cont2 {
+  @include _992 {
+    display: grid;
+    grid-template-columns: 300px auto;
+  }
+}
+.kyz-product-top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 36px;
+  @include  _991{
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .kyx-products-sorting-filter {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+    flex-wrap: wrap;
+   @include _991{
+    width: 100%;
+    justify-content: space-between;
+   }
+    li {
+      font-family: var(--primary-font);
+      font-style: normal;
+      font-weight: 900;
+      font-size: 14px;
+      line-height: 17px;
+      @include _991{
+        font-size: 12px;
+        line-height: 14px;
+      }
+      text-transform: uppercase;
+      color: var(--dark-green);
+    }
+  }
+}
