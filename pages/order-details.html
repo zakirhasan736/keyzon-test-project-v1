@@ -24,29 +24,14 @@
             <div class="kyz-account-wrapper">
                 <div class="kyz-account-title-box">
                     <h1 class="main-title kyz-account-title">order details</h1>
-                    <!-- links item start -->
-                    <div class="kyz-account-sidebar-link-content">
-                        <ul class="kyz-account-link-item">
-                            <li class="kyz-acount-liks"><a href="/">Shopping cart</a></li>
-                            <li class="kyz-acount-liks"><a href="/">Order history</a></li>
-                            <li class="kyz-acount-liks"><a href="/">Account settings</a></li>
-                        </ul>
-                        <button class="kyz-account-logout-btn">logout</button>
-                    </div>
-                    <!-- [end] -->
+                    @@include("partials/_account-sidebar-links.html",{
+						"class": '__top-title-account-links',
+					})
                 </div>
                 <div class="kyz-account-content-wrapper">
-                    <!-- sidebar links items -->
-                    <div class="kyz-account-sidebar-link-content">
-                        <h4 class="kyz-link-items-title">account</h4>
-                        <ul class="kyz-account-link-item">
-                            <li class="kyz-acount-liks"><a href="/">Shopping cart</a></li>
-                            <li class="kyz-acount-liks"><a href="/">Order history</a></li>
-                            <li class="kyz-acount-liks"><a href="/">Account settings</a></li>
-                        </ul>
-                        <button class="kyz-account-logout-btn">logout</button>
-                    </div>
-                    <!-- [end] -->
+                    @@include("partials/_account-sidebar-links.html",{
+						"class": '',
+					})
                     <!-- account page main content start -->
                     <div class="kyz-account-main-content-box">
                         <!--=-=-=-=-=-=-=-=-=-=cart feature section=-=-=-=-=-=-=-=-=-=[start]  -->
@@ -230,57 +215,7 @@
         </div>
     </section>
     <!--=-=-=-=-=-=-=-=-=-=account page layout section=-=-=-=-=-=-=-=-=-=[end]  -->
-    <!--=-=-=-=-=-=-=-=-=-=category products section=-=-=-=-=-=-=-=-=-=[start]  -->
-    <section class="kyz-category-product-section">
-        <div class="kyz-container">
-            <div class="kyz-category-product-wrap">
-                <!-- feature card items start -->
-                <div class="kyz-feature-card">
-                    <h1 class="main-title">all for windows collection
-                    </h1>
-                </div>
-                <!-- [end] -->
-                <!-- product card start here -->
-                <div class="kyz-product-cards-item">
-                    <p class="small-text kyz-product-category">Network / Vmware</p>
-                    <h4 class="kyz-product-title">Vmware Workstation 17 Pro Lifetime License</h4>
-                    <img src="images/cat-product-1.webp" width="294" height="294" alt="product image"
-                        class="kyz-product-img-modal">
-                    <div class="kyz-product-price">
-                        <span class="product-price">$12,00</span>
-                    </div>
-                    <button class="kyz-button _dark-green-button">add to cart</button>
-                </div>
-                <!-- [end] -->
-                <!-- product card start here -->
-                <div class="kyz-product-cards-item">
-                    <p class="small-text kyz-product-category">Network / Vmware</p>
-                    <h4 class="kyz-product-title">Vmware Workstation 17 Pro Lifetime License</h4>
-                    <img src="images/cat-product-2.webp" width="294" height="294" alt="product image"
-                        class="kyz-product-img-modal">
-                    <div class="kyz-product-price">
-                        <span class="product-price">$12,00</span>
-                    </div>
-                    <button class="kyz-button _dark-green-button">add to cart</button>
-                </div>
-                <!-- [end] -->
-                <!-- product card start here -->
-                <div class="kyz-product-cards-item">
-                    <p class="small-text kyz-product-category">Network / Vmware</p>
-                    <h4 class="kyz-product-title">Vmware Workstation 17 Pro Lifetime License</h4>
-                    <img src="images/cat-product-3.webp" width="294" height="294" alt="product image"
-                        class="kyz-product-img-modal">
-                    <div class="kyz-product-price">
-                        <span class="product-price">$12,00</span>
-                    </div>
-                    <button class="kyz-button _dark-green-button">add to cart</button>
-                </div>
-                <!-- [end] -->
-            </div>
-        </div>
-    </section>
-    <!--=-=-=-=-=-=-=-=-=-=category products section=-=-=-=-=-=-=-=-=-=[end]  -->
-
+    @@include("partials/_category-product.html")
 </main>
 
 <!-- footer partials start -->

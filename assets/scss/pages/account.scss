@@ -39,7 +39,13 @@
           @media screen and (max-width: 991px) and (min-width: 768px) {
             display: block;
           }
+          &.__top-title-account-links {
+            .kyz-link-items-title {
+              display: none;
+            }
+          }
         }
+       
       }
 
       .kyz-account-sidebar-link-content {
@@ -414,10 +420,12 @@
         }
       }
     }
+
     .kyz-account-title-box .kyz-account-title {
       display: flex;
-      align-items: flex-start;
+      align-items: flex-start; 
       gap: 10px;
+ 
       @include _991 {
         max-width: 357px;
       }

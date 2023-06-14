@@ -10,13 +10,102 @@
       padding: 65px 0 64px;
     }
     .kyz-container {
-      @media screen and (max-width:365px) {
+      @media screen and (max-width: 365px) {
         padding-left: 25px;
         padding-right: 25px;
       }
-      @media screen and (max-width:345px) {
+      @media screen and (max-width: 345px) {
         padding-left: 15px;
         padding-right: 15px;
+      }
+    }
+
+    &.secondary--header {
+      .kyz-header__nav {
+        .kyz-header__nav--body {
+          @include _992 {
+            justify-content: flex-end;
+          }
+          .kyz-header__nav--list {
+            @include _992 {
+              display: none;
+            }
+          }
+          .kyz-header__nav--wrap {
+            .kyz-header__nav--search--input {
+              @include _992 {
+                max-width: 533px;
+              }
+            }
+            .kyz-header__nav--account {
+              .kyz-header__account--user {
+                @include _992 {
+                  display: none;
+                }
+              }
+              .kyz-header__account--cart span {
+                @include _992 {
+                  display: none;
+                }
+              }
+              .kyz-header__account--cart {
+                @include _992 {
+                  max-width: 82px;
+                  min-width: 82px;
+                  justify-content: center;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .kyz-header-wrapper {
+        @media screen and (max-width: 991px) and (min-width: 768px) {
+          gap: 90px;
+        }
+        .kyz-header__nav--wrap {
+          @media screen and (max-width: 991px) and (min-width: 768px) {
+            flex-direction: column-reverse;
+            gap: 18px;
+            top: -133px;
+            justify-content: flex-end;
+            align-items: flex-end;
+          }
+          .kyz-header__nav--search--label {
+            .kyz-header__nav--search--input {
+              @media screen and (max-width: 991px) and (min-width: 768px) {
+                max-width: 419px;
+              }
+            }
+          } 
+          @include _767{
+              width: 100%;
+              justify-content: flex-end;
+          }
+        }
+      }
+
+      &.secondary--header {
+        @media screen and (max-width: 767px){
+          height: 208px;
+          padding-bottom: 67px;
+        }
+        .kyz-header__nav--search {
+          @media screen and (max-width: 767px){
+            display: block;
+            position: absolute;
+            bottom: -84px;
+            min-width: calc(105px + 100%);
+            right: 0;
+            width: 100%;
+          }
+          .kyz-header__nav--search--input {
+            @media screen and (max-width: 767px){
+              max-width: 100%;
+            }
+          }
+        }
       }
     }
   }
@@ -29,7 +118,7 @@
       flex-direction: column;
       gap: 30px;
     }
-    @include _767{
+    @include _767 {
       gap: 0;
       flex-direction: row;
     }
@@ -60,7 +149,7 @@
     &--body {
       display: flex;
       align-items: center;
-      @include _767{
+      @include _767 {
         justify-content: flex-end;
       }
     }
@@ -112,7 +201,7 @@
         right: 0;
         top: -80px;
       }
-      @include _767{
+      @include _767 {
         top: 0;
         position: relative;
       }
@@ -123,7 +212,7 @@
       @include _991 {
         margin-left: 30px;
       }
-      @include _767{
+      @include _767 {
         display: none;
       }
       .chat-btn {
@@ -146,7 +235,7 @@
     &--search {
       position: relative;
       margin-left: 28px;
-      @include _767{
+      @include _767 {
         display: none;
       }
       &--input {
@@ -230,19 +319,19 @@
       margin-left: 11px;
       @include _991 {
         padding-left: 14px;
-      padding-right: 14px;
-      min-width: 123px;
+        padding-right: 14px;
+        min-width: 123px;
         height: 42px;
         width: 123px;
       }
-      @include _767{
-       margin-left: 9px;
-       padding-left: 8px;
-       padding-right: 8px;
-       min-width: 88px;
-       width: 88px;
-         height: 27px;
-         gap: 0;
+      @include _767 {
+        margin-left: 9px;
+        padding-left: 8px;
+        padding-right: 8px;
+        min-width: 88px;
+        width: 88px;
+        height: 27px;
+        gap: 0;
       }
       span {
         font-family: var(--primary-font);
@@ -279,11 +368,11 @@
       }
     }
   }
- &__burger{
-  @include _768{
-    display: none;
+  &__burger {
+    @include _768 {
+      display: none;
+    }
+    background: transparent;
+    margin-left: 16px;
   }
-  background: transparent;
-  margin-left: 16px;
- }
 }

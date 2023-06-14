@@ -51,35 +51,7 @@
                         </div>
                         <!-- [end] -->
 
-                        <!-- =-=-=-=-=-=-=-=-=-=-news letter section start =-=-=-=-=-[start] -->
-                        <section class="newsletter-section">
-                            <div class="newsletter-wrapper">
-                                <h3 class="newsletter-title">
-                                    Хотите получать свежие новости?
-                                    Подпишитесь на нашу рассылку
-                                </h3>
-                                <form class="newsletter">
-                                    <label class="newsletter--label">
-                                        <input type="text" name="name" placeholder="Name" required
-                                            class="newsletter--input input">
-                                    </label>
-                                    <label class="newsletter--label">
-                                        <input type="email" name="email" placeholder="Email" required
-                                            class="newsletter--input input">
-                                    </label>
-                                    <label class="newsletter--checkbox">
-                                        <input type="checkbox" name="privacy" required class="checkbox__input">
-                                        <span class="checkbox__element"></span>
-                                        <span class="checkbox__text">Ознакомлен с политикой конфиденциальности и
-                                            правилами обработки персональных данных</span>
-                                    </label>
-                                    <button class="newsletter--submit btn _min _mode-3" type="submit">
-                                        Отправить
-                                    </button>
-                                </form>
-                            </div>
-                        </section>
-                        <!-- [end]=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+                       @@include("partials/_newsletter.html")
 
                         <!-- features news start here -->
                         <div class="kyz-news-feature--box">
@@ -163,76 +135,8 @@
                 </div>
             </section>
             <!--=-=-=-=-=-=-=-=-=-=news section=-=-=-=-=-=-=-=-=-=[end]  -->
-            <!--=-=-=-=-=-=-=-=-=-=product cta section=-=-=-=-=-=-=-=-=-=[start]  -->
-            <section class="kyz-product-cta-section">
-                <div class="kyz-container">
-                    <div class="kyz-product-cta-wrapper">
-                        <div class="kyz-product-cta-content">
-                            <h1 class="main-title">Vmware Workstation 17 Pro Lifetime License</h1>
-                        </div>
-                        <div class="kyz-product-cta-modal">
-                            <img src="images/licence-img.webp" width="669" height="453"
-                                alt="product cta modal image" class="kyz-product-cta-modal-img pc-modal">
-                            <img src="images/licence-img.webp" width="354" height="313"
-                                alt="product cta modal image" class="kyz-product-cta-modal-img tablet-modal">
-                            <img src="images/licence-img.webp" width="334" height="226"
-                                alt="product cta modal image" class="kyz-product-cta-modal-img mobo-modal">
-                            <span class="kyz-product-cta-price">12,00 $</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--=-=-=-=-=-=-=-=-=-=product cta section=-=-=-=-=-=-=-=-=-=[end]  -->
-            <!--=-=-=-=-=-=-=-=-=-=category products section=-=-=-=-=-=-=-=-=-=[start]  -->
-            <section class="kyz-category-product-section">
-                <div class="kyz-container">
-                    <div class="kyz-category-product-wrap">
-                        <!-- feature card items start -->
-                        <div class="kyz-feature-card">
-                            <h1 class="main-title">all for windows collection
-                            </h1>
-                        </div>
-                        <!-- [end] -->
-                        <!-- product card start here -->
-                        <div class="kyz-product-cards-item">
-                            <p class="small-text kyz-product-category">Network / Vmware</p>
-                            <h4 class="kyz-product-title">Vmware Workstation 17 Pro Lifetime License</h4>
-                            <img src="images/cat-product-1.webp" width="294" height="294" alt="product image"
-                                class="kyz-product-img-modal">
-                            <div class="kyz-product-price">
-                                <span class="product-price">$12,00</span>
-                            </div>
-                            <button class="kyz-button _dark-green-button">add to cart</button>
-                        </div>
-                        <!-- [end] -->
-                        <!-- product card start here -->
-                        <div class="kyz-product-cards-item">
-                            <p class="small-text kyz-product-category">Network / Vmware</p>
-                            <h4 class="kyz-product-title">Vmware Workstation 17 Pro Lifetime License</h4>
-                            <img src="images/cat-product-2.webp" width="294" height="294" alt="product image"
-                                class="kyz-product-img-modal">
-                            <div class="kyz-product-price">
-                                <span class="product-price">$12,00</span>
-                            </div>
-                            <button class="kyz-button _dark-green-button">add to cart</button>
-                        </div>
-                        <!-- [end] -->
-                        <!-- product card start here -->
-                        <div class="kyz-product-cards-item">
-                            <p class="small-text kyz-product-category">Network / Vmware</p>
-                            <h4 class="kyz-product-title">Vmware Workstation 17 Pro Lifetime License</h4>
-                            <img src="images/cat-product-3.webp" width="294" height="294" alt="product image"
-                                class="kyz-product-img-modal">
-                            <div class="kyz-product-price">
-                                <span class="product-price">$12,00</span>
-                            </div>
-                            <button class="kyz-button _dark-green-button">add to cart</button>
-                        </div>
-                        <!-- [end] -->
-                    </div>
-                </div>
-            </section>
-            <!--=-=-=-=-=-=-=-=-=-=category products section=-=-=-=-=-=-=-=-=-=[end]  -->
+        @@include("partials/_product-cta.html")
+      @@include("partials/_category-product.html")
         </main>
   <!-- footer partials start -->
 @@include("partials/_footer.html")

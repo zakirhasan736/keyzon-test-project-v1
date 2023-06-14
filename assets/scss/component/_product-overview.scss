@@ -120,6 +120,14 @@
     padding-bottom: 97px;
     padding-left: 79px;
     padding-right: 79px;
+    @include _991{
+      padding-left: 47px;
+    padding-right: 47px;
+    }
+    @include _767{
+      padding-left: 0px;
+    padding-right: 0px;
+    }
   }
 }
 .kyz-main-body-content-wrap {

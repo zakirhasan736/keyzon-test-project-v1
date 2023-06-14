@@ -24,29 +24,14 @@
 			<div class="kyz-account-wrapper">
 				<div class="kyz-account-title-box">
 					<h1 class="main-title kyz-account-title">cart</h1>
-					<!-- links item start -->
-					<div class="kyz-account-sidebar-link-content">
-						<ul class="kyz-account-link-item">
-							<li class="kyz-acount-liks"><a href="/">Shopping cart</a></li>
-							<li class="kyz-acount-liks"><a href="/">Order history</a></li>
-							<li class="kyz-acount-liks"><a href="/">Account settings</a></li>
-						</ul>
-						<button class="kyz-account-logout-btn">logout</button>
-					</div>
-					<!-- [end] -->
+					@@include("partials/_account-sidebar-links.html",{
+						"class": '__top-title-account-links',
+					})
 				</div>
 				<div class="kyz-account-content-wrapper">
-					<!-- sidebar links items -->
-					<div class="kyz-account-sidebar-link-content">
-						<h4 class="kyz-link-items-title">account</h4>
-						<ul class="kyz-account-link-item">
-							<li class="kyz-acount-liks"><a href="/">Shopping cart</a></li>
-							<li class="kyz-acount-liks"><a href="/">Order history</a></li>
-							<li class="kyz-acount-liks"><a href="/">Account settings</a></li>
-						</ul>
-						<button class="kyz-account-logout-btn">logout</button>
-					</div>
-					<!-- [end] -->
+					@@include("partials/_account-sidebar-links.html",{
+						"class": '',
+					})
 					<!-- account page main content start -->
 					<div class="kyz-account-main-content-box">
 						<!--=-=-=-=-=-=-=-=-=-=cart feature section=-=-=-=-=-=-=-=-=-=[start]  -->
@@ -377,37 +362,7 @@
 		</div>
 	</section>
 	<!--=-=-=-=-=-=-=-=-=-=account page layout section=-=-=-=-=-=-=-=-=-=[end]  -->
-	<!--=-=-=-=-=-=-=-=-=-=features slide section=-=-=-=-=-=-=-=-=-=[start]  -->
-	<section class="kyz-feature-slide-section">
-		<div class="kyz-feature-slide-wrapper">
-			<!-- feature card items start -->
-			<div class="kyz-feature-card">
-				<h1 class="main-title">Подборка Все для Windows</h1>
-			</div>
-			<!-- [end] -->
-			<!-- feature card items start -->
-			<div class="kyz-feature-card  active-feature">
-				<h1 class="main-title">all for
-					servers
-					collection</h1>
-			</div>
-			<!-- [end] -->
-			<!-- feature card items start -->
-			<div class="kyz-feature-card">
-				<h1 class="main-title">all for windows collection
-				</h1>
-			</div>
-			<!-- [end] -->
-			<!-- feature card items start -->
-			<div class="kyz-feature-card">
-				<h1 class="main-title">all for
-					servers
-					collection</h1>
-			</div>
-			<!-- [end] -->
-		</div>
-	</section>
-	<!--=-=-=-=-=-=-=-=-=-=features slide section=-=-=-=-=-=-=-=-=-=[end]  -->
+	@@include("partials/_feature-slider.html")
 
 </main>
 

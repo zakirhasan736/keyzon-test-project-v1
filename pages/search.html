@@ -1,6 +1,8 @@
 <!-- header partials start -->
 @@include("partials/_head.html")
-@@include("partials/_header.html")
+@@include("partials/_header.html", {
+	"class": 'secondary--header',
+})
 <!-- [end] --> 
 		<main class="kyz-main-body-content-wrap search-product--page">
 			<!-- =-=-=-=-=-==-=-==-breadcrumb start here=-=-=-=-=-=[start]-==-= -->
@@ -15,6 +17,7 @@
 				</div>
 			</div>
 			<!-- =-=-=-=-=-==-=-==-breadcrumb =-=-=-=-=-=-=-=-=-=-[end] -->
+
 			<div class="kyz-product-search-overview">
 				<div class="kyz-container">
 					<div class="kyz-search-data-title-box">
@@ -35,85 +38,17 @@
 							<div class="kyz-product-overview-main-content">
 									<!-- product all category start -->
 									<div class="kyz-product-all-category-list">
-										<!-- product filter start -->
-										<div class="kyz-product-filter-widgets">
-											<h4 class="filter-product-title">all goods</h4>
-											<ul class="filter-category-list">
-												<li class="filter-cat-list-item">
-													<button class="filter-button">Network</button>
-													<ul>
-														<li>
-															<button class="filter-button active-btn">VmWare</button>
-														</li>
-														<li>
-															<button class="filter-button">Parallels</button>
-														</li>
-														<li>
-															<button class="filter-button">Acronis</button>
-														</li>
-														<li>
-															<button class="filter-button">Cisco</button>
-														</li>
-													</ul>
-												</li>
-												<li class="filter-cat-list-item">
-													<button class="filter-button">Network</button>
-												</li>
-												<li class="filter-cat-list-item">
-													<button class="filter-button">Network</button>
-												</li>
-											</ul>
-											<div class="price-filter-box">
-												<h4 class="filter-product-title">price</h4>
-												<div class="price-filter-input-box">
-													<input type="text" class="from" placeholder="From">
-													<input type="text" class="to" placeholder="To">
-												</div>
-											</div>
-										</div>
-										<!-- [end] -->
+										@@include("partials/_product-filter.html", {
+											"class": '',
+										})
 									</div>
 									<!-- [end] -->
 
 									<!-- all product overview start -->
 									<div class="kyz-all-products-main">
-										<!-- product filter start -->
-										<div class="kyz-product-filter-widgets filter-on-tablet">
-											<h4 class="filter-product-title">all goods</h4>
-											<ul class="filter-category-list">
-												<li class="filter-cat-list-item">
-													<button class="filter-button">Network</button>
-													<ul>
-														<li>
-															<button class="filter-button active-btn">VmWare</button>
-														</li>
-														<li>
-															<button class="filter-button">Parallels</button>
-														</li>
-														<li>
-															<button class="filter-button">Acronis</button>
-														</li>
-														<li>
-															<button class="filter-button">Cisco</button>
-														</li>
-													</ul>
-												</li>
-												<li class="filter-cat-list-item">
-													<button class="filter-button">Windows</button>
-												</li>
-												<li class="filter-cat-list-item">
-													<button class="filter-button">Adobe</button>
-												</li>
-											</ul>
-											<div class="price-filter-box">
-												<h4 class="filter-product-title">price</h4>
-												<div class="price-filter-input-box">
-													<input type="text" class="from" placeholder="From">
-													<input type="text" class="to" placeholder="To">
-												</div>
-											</div>
-										</div>
-										<!-- [end] -->
+										@@include("partials/_product-filter.html", {
+											"class": 'filter-on-tablet',
+										})
 										<!-- product card start here -->
 										<div class="kyz-product-cards-item">
 											<p class="small-text kyz-product-category">Network / Vmware</p>
@@ -291,26 +226,8 @@
 					</div>
 				</div>
 			</div>
-			<!--=-=-=-=-=-=-=-=-=-=product cta section=-=-=-=-=-=-=-=-=-=[start]  -->
-			<section class="kyz-product-cta-section">
-				<div class="kyz-container">
-					<div class="kyz-product-cta-wrapper">
-						<div class="kyz-product-cta-content">
-							<h1 class="main-title">Vmware Workstation 17 Pro Lifetime License</h1>
-						</div>
-						<div class="kyz-product-cta-modal">
-							<img src="images/licence-img.webp" width="669" height="453"
-								alt="product cta modal image" class="kyz-product-cta-modal-img pc-modal">
-							<img src="images/licence-img.webp" width="354" height="313"
-								alt="product cta modal image" class="kyz-product-cta-modal-img tablet-modal">
-							<img src="images/licence-img.webp" width="334" height="226"
-								alt="product cta modal image" class="kyz-product-cta-modal-img mobo-modal">
-							<span class="kyz-product-cta-price">12,00 $</span>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!--=-=-=-=-=-=-=-=-=-=product cta section=-=-=-=-=-=-=-=-=-=[end]  -->
+			
+			@@include("partials/_product-cta.html")
 
 		</main>
 <!-- footer partials start -->
