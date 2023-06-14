@@ -69,19 +69,19 @@
       grid-row-gap: 18px;
     }
     &--label {
-      &:nth-child(1) {
+      &.name-input {
         @include _768 {
           grid-column: 1;
           grid-row: 1;
         }
       }
-      &:nth-child(2) {
+      &.name-email {
         @include _768 {
           grid-column: 1;
           grid-row: 2;
         }
       }
-      &:nth-child(3) {
+      &.name-msg {
         @include _768 {
           grid-column: 2;
           grid-row: 1/3;

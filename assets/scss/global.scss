@@ -101,6 +101,9 @@ img {
 fieldset {
   padding: 0;
 }
+.kyz-main-body-content-wrap {
+	overflow: hidden;
+}
 body {
   @include _768 {
     font-size: 12px;
