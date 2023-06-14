@@ -1,4 +1,8 @@
 .kyz-feature {
+  &-slide-section{
+    position: relative;
+    overflow: hidden;
+  }
   &-slide-wrapper {
     display: flex;
     align-items: center;

@@ -1,5 +1,6 @@
 .newsletter-section {
   background: var(--dark-green);
+  overflow: hidden;
   padding: 61px 38px;
   @include _768{
     padding: 69px 48px 77px;

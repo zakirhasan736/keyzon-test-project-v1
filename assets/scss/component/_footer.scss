@@ -1,5 +1,6 @@
 .footer {
   &-section {
+    overflow: hidden;
     padding: 55px 0 32px;
     background: var(--dark-green);
     @include _992 {

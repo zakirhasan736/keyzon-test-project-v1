@@ -1,5 +1,6 @@
 .kyz-header {
   &-section {
+    overflow: hidden;
     padding: 28px 0 28px;
     background: var(--light-green);
     @include _768 {

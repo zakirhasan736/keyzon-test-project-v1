@@ -1,6 +1,7 @@
 .kyz-product-cta {
   &-section {
     position: relative;
+    overflow: hidden;
     .kyz-container {
       @include _991 {
         padding-left: 6px;

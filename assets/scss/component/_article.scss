@@ -3,6 +3,7 @@
     position: relative;
     padding-top: 155px;
     padding-bottom: 154px;
+    overflow: hidden;
     @include _991 {
       padding-top: 82px;
       padding-bottom: 102px;

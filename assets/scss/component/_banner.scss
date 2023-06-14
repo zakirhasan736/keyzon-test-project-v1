@@ -2,6 +2,7 @@
   &-section {
     position: relative;
     background-color: var(--light-green);
+    overflow: hidden;
     @include _768 {
       padding-top: 57px;
       padding-bottom: 67px;

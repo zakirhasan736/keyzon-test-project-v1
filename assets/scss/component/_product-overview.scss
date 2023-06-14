@@ -1,6 +1,7 @@
 .kyz-product-overview {
   &-section {
     position: relative;
+    overflow: hidden;
     padding-top: 71px;
     @include _991 {
       padding-top: 49px;

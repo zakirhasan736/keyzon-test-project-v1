@@ -5,6 +5,7 @@
   margin: 0;
   border: 0;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 *,
@@ -51,8 +52,6 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  overflow: hidden;
-  overflow-y: scroll;
   scroll-behavior: smooth;
 }
 
@@ -211,8 +210,6 @@ h6 {
   color: var(--dark-green);
 }
 
-
-
 .large-text {
   @include _768 {
     font-size: 22px;
@@ -270,43 +267,43 @@ p,
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  @media screen and (max-width:1580px) and (min-width:768px) {
-  padding-left: 54px;
-  padding-right: 54px;
-}
-@media screen and (max-width:767px){
-  padding-left: 42px;
-  padding-right: 42px;
-}
-// kyz-container_large
+  @media screen and (max-width: 1580px) and (min-width: 768px) {
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+  @media screen and (max-width: 767px) {
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+  // kyz-container_large
   &_large {
     max-width: 1740px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    @media screen and (max-width:1740px) and (min-width:768px) {
-  padding-left: 54px;
-  padding-right: 54px;
-}
-@media screen and (max-width:767px) {
-  padding-left: 42px;
-  padding-right: 42px;
-}
+    @media screen and (max-width: 1740px) and (min-width: 768px) {
+      padding-left: 54px;
+      padding-right: 54px;
+    }
+    @media screen and (max-width: 767px) {
+      padding-left: 42px;
+      padding-right: 42px;
+    }
   }
-// kyz-container_medium
+  // kyz-container_medium
   &_medium {
     max-width: 1356px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    @media screen and (max-width:1356px) and (min-width:768px) {
-  padding-left: 54px;
-  padding-right: 54px;
-}
-@media screen and (max-width:767px){
-  padding-left: 42px;
-  padding-right: 42px;
-}
+    @media screen and (max-width: 1356px) and (min-width: 768px) {
+      padding-left: 54px;
+      padding-right: 54px;
+    }
+    @media screen and (max-width: 767px) {
+      padding-left: 42px;
+      padding-right: 42px;
+    }
   }
   // kyz-container_small
   &_small {
@@ -314,14 +311,13 @@ p,
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    @media screen and (max-width:1260px) and (min-width:768px) {
-  padding-left: 54px;
-  padding-right: 54px;
-}
-@media screen and (max-width:767px){
-  padding-left: 42px;
-  padding-right: 42px;
-}
+    @media screen and (max-width: 1260px) and (min-width: 768px) {
+      padding-left: 54px;
+      padding-right: 54px;
+    }
+    @media screen and (max-width: 767px) {
+      padding-left: 42px;
+      padding-right: 42px;
+    }
   }
 }
-
