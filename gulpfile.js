@@ -22,11 +22,13 @@ var reload = browsersync.reload;
 // == Browser-sync task
 gulp.task("browser-sync", function (done) {
   browsersync.init({
-    server: "./",
-    startPath: "dist/index.html", 
+    server: {
+			baseDir: 'dist/',
+		},
+    // startPath: "dist/index.html", 
     //    browser: 'chrome',
     host: 'localhost',
-       port: 4040,
+       port: 5000,
     open: true,
     tunnel: true
   });

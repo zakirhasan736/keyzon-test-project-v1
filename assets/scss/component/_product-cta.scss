@@ -15,7 +15,7 @@
   &-wrapper {
     padding: 80px 111px 86px 160px;
     position: relative;
-    background: url('/dist/images/product-cta-bg.webp');
+    background: url('../images/product-cta-bg.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@
     @include _991 {
       padding: 56px 62px 86px 45px;
       height: 459px;
-       background: url('/dist/images/product-cta-bg-tablet.webp');
+       background: url('../images/product-cta-bg-tablet.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,10 +31,10 @@
     @include _767 {
       padding: 48px 10px 86px 39px;
       height: 453px;
-       background: url('/dist/images/product-cta-bg-mobo.webp');
+       background: url('../images/product-cta-bg-mobo.webp');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     }
   }
   &-content {
