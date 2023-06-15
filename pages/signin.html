@@ -1,11 +1,16 @@
 <!-- header partials start -->
 @@include("partials/_head.html")
-@@include("partials/_header.html")
+@@include("partials/_header.html",{
+	"class": '',
+	"filterClass": '',
+	"accountLinks": '',
+	"authPage": 'auth-page-active',
+}) 
 <!-- [end] -->
 <main class="kyz-main-body-content-wrap athentication--page authentication-signin-page">
 	<div class="kyz-authentication-main-wrapper">
 		<div class="kyz-container">
-           <div class="kyz-authentecation--wrapper">
+           <div class="kyz-authentecation--wrapper"> 
 			<div class="kyz-auth-details-content">
 				<h1 class="kyz-order-title"><img src="images/user-dark-green-icons.svg" alt="auth user icons"
 						class="auth-icons"> Sign in</h1>

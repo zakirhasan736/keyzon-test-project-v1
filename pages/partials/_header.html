@@ -7,8 +7,10 @@
                         class="kyz-header__logo--img">
                 </a>
             </div>
+
             <nav class="kyz-header__nav">
                 <div class="kyz-header__nav--body">
+
                     <ul class="kyz-header__nav--list">
                         <li>
                             <a href="/catalog.html">
@@ -46,12 +48,44 @@
                             </a>
                         </li>
                     </ul>
+
                     <div class="kyz-header__nav--wrap">
                         <div class="kyz-header__nav--account">
                             <div class="kyz-header__account">
-                                <a href="#sign-in-popup" class="kyz-header__account--user">
-                                    <img width="23" height="27" src="images/user-head-green.svg" alt="">
-                                </a>
+                                <div class="kyz-header-user-account-wrap">
+                                    <a href="#sign-in-popup" class="kyz-header__account--user">
+                                        <img width="23" height="27" src="images/user-head-green.svg" alt="">
+                                    </a>
+                                    <!-- if user not signin then show this dropdown -->
+                                    @@include("./_singin-widgets.html")
+                                    <!-- if user signin then show this dropdown -->
+                                    <div class="kyz-header-user-account-box">
+                                        <h4 class="kyz-header-account-title">account</h4>
+                                        <div class="kyz-header-account-card-box">
+                                            <div class="kyz-account-links-card">
+                                                <a href="/">
+                                                    <img src="images/chart-outline-light-green-icon.svg" alt="">
+                                                    <h4 class="kyz-acc-card-title">shopping cart</h4>
+                                                </a>
+                                            </div>
+                                            <div class="kyz-account-links-card">
+                                                <a href="/">
+                                                    <img src="images/chart-clock-light-green-icon.svg" alt="">
+                                                    <h4 class="kyz-acc-card-title">order history</h4>
+                                                </a>
+                                            </div>
+                                            <div class="kyz-account-links-card">
+                                                <a href="/">
+                                                    <img src="images/user-outline-light-green-icon.svg" alt="">
+                                                    <h4 class="kyz-acc-card-title">account settings</h4>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <button class="kyz-button-logout">logout</button>
+                                    </div>
+                                    <!-- [end] -->
+                                </div>
+
                                 <a href="#cart-popup" class="kyz-header__account--cart">
                                     <span>3</span>
                                     <img width="31" height="25" src="images/card-head-icon.svg" alt="">
@@ -76,9 +110,111 @@
                             <img width="30" height="23.4" src="images/trigger.svg" alt="trigger icons">
                         </button>
                     </div>
-                </div> 
-            </nav>
 
+                </div>
+            </nav>
         </div>
+        <!-- mobile header start -->
+        <div class="kyz-mobile-header-main-wrapper @@filterClass @@accountLinks @@authPage mobile-header-open">
+            <div class="kyz-header-wrapper">
+
+                <div class="kyz-mobile-header-top-box">
+                    <div class="kyz-header-brand-box">
+                        <a href="index.html" class="kyz-header-brand-box__logo">
+                            <img src="images/logo-2.svg" alt="Logo" width="236" height="60" loading="lazy"
+                                class="kyz-header__logo--img">
+                        </a>
+                    </div>
+                    <div class="kyz-header__nav--wrap">
+                        <div class="kyz-header__nav--account">
+                            <div class="kyz-header__account">
+                                <a href="#sign-in-popup" class="kyz-header__account--user">
+                                    <img width="23" height="27" src="images/user-head-green.svg" alt="">
+                                </a>
+                                <a href="#cart-popup" class="kyz-header__account--cart">
+                                    <span>3</span>
+                                    <img width="31" height="25" src="images/card-head-icon.svg" alt="">
+                                    <span>$129</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <button class="kyz-header__burger" type="button" aria-label="Menu">
+                            <img width="30" height="23.4" src="images/close-btn-white.svg" alt="trigger icons">
+                        </button>
+                    </div>
+                </div>
+
+                <nav class="kyz-header__nav">
+                    <div class="kyz-header__nav--body">
+                        <form action="#" class="kyz-header__nav--search">
+                            <label class="kyz-header__nav--search--label">
+                                <input type="search" name="search" class="kyz-header__nav--search--input">
+                            </label>
+                            <button class="kyz-header__nav--search--submit" type="submit" title="Search">
+                                <img width="23" height="25" src="images/search-head-white-icon.svg" alt="">
+                            </button>
+                        </form>
+
+                        @@include("./_singin-widgets.html")
+
+                        @@include("./_account-sidebar-links.html",{
+                        "class": '',
+                        })
+
+                        @@include("./_product-filter.html",{
+                        "class": '',
+                        })
+                        <ul class="kyz-header__nav--list">
+                            <li>
+                                <a href="/catalog.html">
+                                    Catalog
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/sale.html">
+                                    Sale
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/news.html">
+                                    News
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/articles.html">
+                                    Articles
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/about.html">
+                                    About us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contacts.html">
+                                    Contacts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/faq.html">
+                                    FAQ
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="kyz-header__nav--message">
+                            <a href="#" class="chat-btn _min _notification" title="Chat">
+                                <img width="37" height="37" src="images/chat-head-light-green-icon.svg" alt="">
+                            </a>
+                        </div>
+
+                        <!-- cta header forms -->
+                        @@include("./_cta-forms.html")
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- [end] -->
     </div>
 </header>

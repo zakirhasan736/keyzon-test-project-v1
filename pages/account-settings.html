@@ -1,6 +1,10 @@
 <!-- header partials start -->
 @@include("partials/_head.html")
-@@include("partials/_header.html")
+@@include("partials/_header.html",{
+	"class": '',
+	"filterClass": '',
+	"accountLinks": 'accounts-links-active',
+}) 
 <!-- [end] -->
 <main class="kyz-main-body-content-wrap account--page">
 	<!-- =-=-=-=-=-==-=-==-breadcrumb start here=-=-=-=-=-=[start]-==-= -->
@@ -12,8 +16,8 @@
 					<li><a href="/"><span class="divider-slash">/</span> account</a></li>
 					<li><a href="/"><span class="divider-slash">/</span> account settings</a></li>
 				</ul>
-			</div>
-		</div>
+			</div> 
+		</div> 
 	</div>
 	<!-- =-=-=-=-=-==-=-==-breadcrumb =-=-=-=-=-=-=-=-=-=-[end] -->
 
@@ -23,10 +27,10 @@
 			<div class="kyz-account-wrapper">
 				<div class="kyz-account-title-box">
 					<h1 class="main-title kyz-account-title">account settings</h1>
-					@@include("partials/_account-sidebar-links.html",{
+					@@include("partials/_account-sidebar-links.html",{ 
 						"class": '__top-title-account-links',
 					})
-				</div>
+				</div> 
 				<div class="kyz-account-content-wrapper"> 
 					@@include("partials/_account-sidebar-links.html",{
 						"class": '',
@@ -34,8 +38,8 @@
 					<!-- account page main content start -->
 					<div class="kyz-account-main-content-box">
 						<div class="kyz-account-settings-wrapper">
-							<!-- account settings card -->
-							<div class="kyz-account-settings-items-card changed-states">
+							<!-- account settings card [email change states]-->
+							<!-- <div class="kyz-account-settings-items-card changed-states">
 								<div class="kyz-account-content-box"> 
 									<div class="kyz-account-label"><img src="images/envelop-small.svg"
 											alt="envelop icons"> <span>Email</span></div>
@@ -51,10 +55,10 @@
 									<input type="password" required class="kyz-input-items" placeholder="Password">
 								</div>
 								<button class="kyz-button _dark-green-button">Change</button>
-							</div>
+							</div> -->
 							<!-- [end] -->
-							<!-- account settings card -->
-							<div class="kyz-account-settings-items-card changed-states-msg">
+							<!-- account settings card [email change states massage]-->
+							<!-- <div class="kyz-account-settings-items-card changed-states-msg">
 								<div class="kyz-account-content-box">
 									<div class="kyz-account-label"><img src="images/envelop-small.svg"
 											alt="envelop icons"> <span>Email</span></div>
@@ -68,10 +72,10 @@
 									</p>
 								</div>
 								<button class="kyz-button _dark-green-button">Change</button>
-							</div>
+							</div> -->
 							<!-- [end] -->
-							<!-- account settings card -->
-							<div class="kyz-account-settings-items-card changed-states-msg">
+							<!-- account settings card [email change states success massage]-->
+							<!-- <div class="kyz-account-settings-items-card changed-states-msg">
 								<div class="kyz-account-content-box">
 									<div class="kyz-account-label"><img src="images/envelop-small.svg"
 											alt="envelop icons"> <span>Email</span></div>
@@ -84,7 +88,7 @@
 										Email has changes succesfully.
 									</p>
 								</div>
-							</div>
+							</div> -->
 							<!-- [end] -->
 							<!-- account settings card -->
 							<div class="kyz-account-settings-items-card">
@@ -97,7 +101,7 @@
 							</div>
 							<!-- [end] -->
 
-							<!-- account settings card -->
+							<!-- account settings card [user name change states]-->
 							<!-- <div class="kyz-account-settings-items-card changed-states">
 								<div class="kyz-account-content-box">
 									<div class="kyz-account-label"><img src="images/user-small.svg"
@@ -113,8 +117,8 @@
 										placeholder="Second Name">
 								</div>
 								<button class="kyz-button _dark-green-button">Change</button>
-							</div> -->
-							<!-- [end] -->
+							</div>  -->
+							<!-- [end]-->
 
 							<!-- account settings card -->
 							<div class="kyz-account-settings-items-card">
@@ -127,7 +131,7 @@
 							</div>
 							<!-- [end] -->
 
-							<!-- account settings card -->
+							<!-- account settings card [password reset change states]-->
 							<!-- <div class="kyz-account-settings-items-card changed-states four-column-states">
 								<div class="kyz-account-content-box">
 									<div class="kyz-account-label"><img src="images/lock-small.svg"
@@ -146,14 +150,14 @@
 								<div class="kyz-input-group ">
 									<label class="password-view"><img src="images/eys-icons.svg"
 											alt="eye icons"></label>
-									<input type="password" required class="kyz-input-items"
+									<input type="password" required class="kyz-input-items" 
 										placeholder="Confirmed Password">
 								</div>
 								<button class="kyz-button _dark-green-button">Change</button>
 							</div> -->
 							<!-- [end] -->
 
-							<!-- account settings card -->
+							<!-- account settings card [password reset change states success massage]-->
 							<!-- <div class="kyz-account-settings-items-card changed-states-msg">
 								<div class="kyz-account-content-box">
 									<div class="kyz-account-label"><img src="images/lock-small.svg"
@@ -166,8 +170,8 @@
 									<p class="kyz-input-text">
 										New password created succesfully.
 									</p>
-								</div>
-							</div> -->
+								</div> 
+							</div>-->
 							<!-- [end] -->
 							<!-- account settings card -->
 							<div class="kyz-account-settings-items-card">
@@ -179,7 +183,7 @@
 								<button class="kyz-button _dark-green-button">Change</button>
 							</div>
 							<!-- [end] -->
-							<!-- account settings card -->
+							<!-- account settings card [phone number change states]-->
 							<!-- <div class="kyz-account-settings-items-card changed-states">
 								<div class="kyz-account-content-box">
 									<div class="kyz-account-label"><img src="images/call-small.svg"
@@ -209,10 +213,7 @@
 							</div>
 							<!-- [end] -->
 						</div>
-
-						<!--=-=-=-==-=-=-=-= [changes states start here]=-=-=-=-==-=-=-[START] -->
-
-						<!--=-=-==-==-=-=-=- [changes states  here]=-=-=-=-==-=-=-[END] -->
+>
 					</div>
 					<!-- [end] -->
 				</div>

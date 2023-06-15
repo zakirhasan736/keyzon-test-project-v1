@@ -1,6 +1,10 @@
 <!-- header partials start -->
 @@include("partials/_head.html")
-@@include("partials/_header.html")
+@@include("partials/_header.html",{
+	"class": '',
+	"filterClass": '',
+	"accountLinks": 'accounts-links-active',
+}) 
 <!-- [end] -->
 <main class="kyz-main-body-content-wrap account--page">
 	<!-- =-=-=-=-=-==-=-==-breadcrumb start here=-=-=-=-=-=[start]-==-= -->
@@ -11,7 +15,7 @@
 					<li><a href="/">main</a></li>
 					<li><a href="/"><span class="divider-slash">/</span> личный кабинет</a></li>
 					<li><a href="/"><span class="divider-slash">/</span> корзина</a></li>
-				</ul>
+				</ul> 
 			</div>
 		</div>
 	</div>
@@ -30,7 +34,7 @@
 				</div>
 				<div class="kyz-account-content-wrapper">
 					@@include("partials/_account-sidebar-links.html",{
-						"class": '',
+						"class": '', 
 					})
 					<!-- account page main content start -->
 					<div class="kyz-account-main-content-box">
