@@ -1,7 +1,30 @@
 .kyz-main-body-content-wrap{
     &.article-details--page{
+       
         .kyz-articles-section {
+            @include _992{
             padding-top: 111px;
+            }
+            .kyz-container {
+                @include _991{
+                    padding: 0 6px;
+                }
+                @include _767{
+                    padding: 0 4px;
+                }
+                .kyz-articles-feature--box,
+                .kyz-articles-single--item{
+                    @include _991{
+                       padding-left: 48px;
+                       padding-right: 48px;
+                    }
+                    @include _767{
+                        padding-left: 38px;
+                       padding-right: 38px;
+                    }
+                }
+
+            }
         }
         .kyz-articles-single--item {
             .kyz-article-single-title {

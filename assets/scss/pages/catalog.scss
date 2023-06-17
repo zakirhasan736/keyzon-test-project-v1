@@ -1,0 +1,40 @@
+.kyz-product-overview-section {
+  &.catalog--page-products {
+    .kyz-product-overview-wrapper{
+      padding-left: 0;
+      padding-right: 0;
+  .kyz-product-top-header {
+        padding-left: 38px;
+        padding-right: 38px;
+      }
+    }
+    .kyz-product-overview-main-content {
+      padding-left: 0;
+      padding-right: 0;
+      .kyz-product-overview-main-cont1 {
+        @include _991 {
+          padding-left: 48px;
+          padding-right: 48px;
+        }
+        @include _767 {
+          padding-left: 38px;
+          padding-right: 38px;
+        }
+
+      }
+      .kyz-product-overview-main-cont2 { 
+        .kyz-all-products-main {
+          @include _991 {
+            padding-left: 48px;
+            padding-right: 48px;
+          }
+          @include _767 {
+            padding-left: 38px;
+            padding-right: 38px;
+          }
+
+        }
+      }
+    }
+  }
+}

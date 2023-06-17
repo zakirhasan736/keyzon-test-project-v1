@@ -113,6 +113,12 @@
   &-interaction {
     padding-bottom: 154px;
     grid-column: 2 span;
+    @include _991{
+    padding-bottom: 80px;
+    }
+    @include _767{
+      padding-bottom: 56px;
+      }
   }
 }
 .kyz-product-overview-wrapper {

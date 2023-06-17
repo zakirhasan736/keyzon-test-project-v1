@@ -1,6 +1,19 @@
-.kyz-main-body-content-wrap.collection-page .kyz-sale-week-section {
-    margin-bottom: 149px;
+.kyz-main-body-content-wrap{
+  &.collection-page {
+    .kyz-feature-slide-wrapper {
+      margin-bottom: 135px;
+    }
+    .kyz-product-overview-banner{
+      @include _991{
+        height: 208px;
+      }
+      @include _767{
+        height: 171px;
+      }
+    }
+    .kyz-sale-week-section {
+      margin-bottom: 149px;
+    }
   }
-  .kyz-main-body-content-wrap.collection-page .kyz-feature-slide-wrapper {
-    margin-bottom: 135px;
-  }
+}
+

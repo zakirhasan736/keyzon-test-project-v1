@@ -13,6 +13,7 @@
         padding-top: 142px;
         padding-bottom: 154px;
       }
+
   }
   &-main-wrapper {
     .kyz-feedback-subtitle {
@@ -95,3 +96,14 @@
   }
 }
 
+.kyz-main-body-content-wrap{
+  &.prodcut-details--page {
+    .kyz-feedback-section{
+      .kyz-container {
+        @include _991{
+          padding: 0;
+        }
+      }
+    }
+  }
+}

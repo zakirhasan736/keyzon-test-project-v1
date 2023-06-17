@@ -387,7 +387,13 @@
     &--body {
     }
   }
-
+  .product__coupon--title{
+    @include _767{
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 6px;
+    }
+  }
   // .cart__total
 
   &__total {
@@ -618,7 +624,7 @@
   @include _767 {
     font-size: 14px;
     line-height: 17px;
-    text-align: center;
+    text-align: left;
   }
   text-transform: uppercase;
   color: var(--dark-green);
