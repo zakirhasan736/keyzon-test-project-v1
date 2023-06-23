@@ -4,6 +4,9 @@
     padding-bottom: 148px;
     overflow: hidden;
   }
+  &-wrapper{
+    position: relative;
+  }
   &--form {
     margin-top: 0;
     grid-row-gap: 16px;

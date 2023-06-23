@@ -70,6 +70,14 @@ gulp.task("webpImage", () => {
 .pipe(gulp.dest('dist/images'))
 );
 });
+//svg images
+gulp.task("svgImage", () => {
+  return( 
+  gulp
+.src('assets/images/*.{svg,gif,pdf}')
+.pipe(gulp.dest('dist/images'))
+);
+});
 
 
 gulp.task("htmlInc", () => {
@@ -110,7 +118,7 @@ gulp.task("js", () => {
   );
 });
 
-gulp.task("default", gulp.series("css", "js", "webfonts", "webpImage","htmlInc","htmlComponents", "browser-sync", () => {
+gulp.task("default", gulp.series("css", "js", "webfonts", "webpImage","htmlInc","htmlComponents", "browser-sync", "svgImage", () => {
   livereload.listen();
   gulp.watch(["assets/scss/**/*"], gulp.series("css"));
   gulp.watch(["assets/js/**/*"], gulp.series("js"));
@@ -118,6 +126,7 @@ gulp.task("default", gulp.series("css", "js", "webfonts", "webpImage","htmlInc",
   gulp.watch(['pages/*.html'], gulp.series("htmlInc"));
   gulp.watch(["assets/scss/vendor/fontawesome/webfonts/*"], gulp.series("webfonts"));
   gulp.watch('assets/images/*.{jpg,png}', gulp.series("webpImage")); 
+  gulp.watch('assets/images/*.{svg,gif,pdf}', gulp.series("svgImage")); 
 }));
 
 

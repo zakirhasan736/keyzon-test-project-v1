@@ -1,220 +1,58 @@
 <!-- header partials start -->
 @@include("partials/_head.html")
-@@include("partials/_header.html")
+@@include("partials/_header.html",{
+	"class": '',
+	"filterClass": '',
+	"accountLinks": '',
+	"authPage": 'auth-page-active',
+}) 
 <!-- [end] -->
-<main class="kyz-main-body-content-wrap account--page order-details--page">
-    <!-- =-=-=-=-=-==-=-==-breadcrumb start here=-=-=-=-=-=[start]-==-= -->
-    <div class="kyz-breadcrumb-wrap">
-        <div class="kyz-container">
-            <div class="kyz-breadcromb-wrap">
-                <ul class="kyz-breadcrumb">
-                    <li><a href="/">main</a></li>
-                    <li><a href="/"><span class="divider-slash">/</span> личный кабинет</a></li>
-                    <li><a href="/"><span class="divider-slash">/</span>  order details</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- =-=-=-=-=-==-=-==-breadcrumb =-=-=-=-=-=-=-=-=-=-[end] -->
+<main class="kyz-main-body-content-wrap athentication--page authentication-signin-page authentication-guest-order-page">
+	<div class="kyz-authentication-main-wrapper">
+		<div class="kyz-container">
+           <div class="kyz-authentecation--wrapper"> 
+			<div class="kyz-auth-details-content">
+				<h1 class="kyz-order-title"><img src="images/cart-green-icon.svg" alt="auth user icons"
+                        class="auth-icons">Find a guest order
+                    </h1>
+				<div class="kyz-auth-content-wrap-box">
+					<div class="kyz-input-group-content-box">
+						<div class="kyz-auth-input-authentication-wrap-cont">
+							<div class="kyz-input-group">
+								<input type="email" required name="email" class="kyz-input-items"
+									placeholder="user@gmail.com">
+							</div>
+							<div class="kyz-input-group ">
+								<label class="password-view"><img src="images/eys-icons.svg" alt="eye icons"></label>
+								<input type="password" required class="kyz-input-items" placeholder="Password">
+							</div>
+							<button class="kyz-button _dark-green-button">Sign in</button>
+						</div>
+						<!-- <button class="kyz-button-style ab-reset-password-btn">Reset password</button> -->
+					</div>
+				</div>
+			</div>
+			<div class="kyz-auth-details-main-flex">
+				<div class="kyz-auth-details-content">
+					<h3 class="kyz-order-title">
+                        <img src="images/user-dark-green-icons.svg" alt="auth user icons"
+							class="auth-icons"> <a href="./signin.html">Sign in</a>
+                    </h3>
+				</div>
+                <div class="kyz-auth-details-content">
+					<h3 class="kyz-order-title"><div class="cont--box"><img src="images/user-union-green-icons.svg"
+							alt="auth user icons" class="auth-icons"> New user? <a href="./signup.html">Sign
+							up</a></div></h3>
+				</div>
+			</div>
+		   </div>
+		</div>
+	</div>
 
-
-    <!--=-=-=-=-=-=-=-=-=-=account page layout section=-=-=-=-=-=-=-=-=-=[start]  -->
-    <section class="kyz-account--page">
-        <div class="kyz-container">
-            <div class="kyz-account-wrapper">
-                <div class="kyz-account-title-box">
-                    <h1 class="main-title kyz-account-title">order details</h1>
-                  
-                </div>
-                <div class="kyz-account-content-wrapper guest-order-details">
-
-                    <!-- account page main content start -->
-                    <div class="kyz-account-main-content-box">
-                        <!--=-=-=-=-=-=-=-=-=-=cart feature section=-=-=-=-=-=-=-=-=-=[start]  -->
-                        <div class="kyz-product-cart-feature">
-                            <div class="kyz-product-cart-wrapper">
-                                <div class="cart-order-date">
-                                    <h3>12 may 2023</h3>
-                                </div>
-                                <form class="cart cart-details">
-                                    <div class="cart-order-number">
-                                        <h3>№ 3478741</h3>
-                                    </div>
-                                    <div class="cart__header small-text">
-                                        <span>Item</span>
-                                        <span>Price</span>
-                                        <span>Quantity</span>
-                                        <span>Shipping</span>
-                                    </div>
-                                    <div class="cart__list">
-                                        <div class="cart__product">
-                                            <a href="product.html" class="cart__product--info">
-                                                <div class="cart__product--image">
-
-                                                    <img src="images/product-1.webp" alt="" width="147"
-                                                        height="147" loading="lazy">
-                                                </div>
-                                                <span class="cart__product--category small-text">Network / Vmware</span>
-                                                <h3 class="cart__product--title title _super-min">
-                                                    Vmware Workstation 17 Pro Lifetime License
-                                                </h3>
-                                                <div class="cart__product--text small-text">
-                                                    Микрохроматический интервал представляет собой деструктивный
-                                                    соноропериод. Векторно-зеркальная синхронность просветляет рефрен.
-                                                    Серпантинная волна выстраивает винил.
-                                                </div>
-                                            </a>
-                                            <div class="cart__product--element">
-                                                <span class="cart__product--element-name small-text">Price</span>
-                                                <div class="kyz-product-price">
-                                                    <span class="discount-price">$13,00</span>
-                                                    <span class="product-price">$12,00</span>
-                                                </div>
-                                            </div>
-                                            <div class="cart__product--element">
-                                                <span class="cart__product--element-name small-text">Quantity</span>
-                                                <div class="product__amount amount-block _min">
-                                                    <div class="product__amount--body quatity-selected">
-
-                                                        <label><input type="number" name="amount" value="1"
-                                                                placeholder="Amount" required min="1"
-                                                                class="product__amount--input amount-input"></label>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="cart__product--element">
-                                                <span class="cart__product--element-name small-text">Shipping</span>
-                                                <b class="cart__product--shipping text _min">
-                                                    Electronic Delivery - Free
-                                                </b>
-                                            </div>
-                                            <button class="cart__product--delete" type="button" title="Delete product">
-                                                <svg width="39" height="40" viewBox="0 0 39 40">
-                                                    <use xlink:href="images/sprites.svg#trash"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="cart__product">
-                                            <a href="product.html" class="cart__product--info">
-                                                <div class="cart__product--image">
-
-                                                    <img src="images/product-1.webp" alt="" width="147"
-                                                        height="147" loading="lazy">
-                                                </div>
-                                                <span class="cart__product--category small-text">Network / Vmware</span>
-                                                <h3 class="cart__product--title title _super-min">
-                                                    Vmware Workstation 17 Pro Lifetime License
-                                                </h3>
-                                                <div class="cart__product--text small-text">
-                                                    Микрохроматический интервал представляет собой деструктивный
-                                                    соноропериод. Векторно-зеркальная синхронность просветляет рефрен.
-                                                    Серпантинная волна выстраивает винил.
-                                                </div>
-                                            </a>
-                                            <div class="cart__product--element">
-                                                <span class="cart__product--element-name small-text">Price</span>
-                                                <div class="kyz-product-price">
-                                                    <span class="discount-price">$13,00</span>
-                                                    <span class="product-price">$12,00</span>
-                                                </div>
-                                            </div>
-                                            <div class="cart__product--element">
-                                                <span class="cart__product--element-name small-text">Quantity</span>
-                                                <div class="product__amount amount-block _min">
-                                                    <div class="product__amount--body quatity-selected">
-
-                                                        <label><input type="number" name="amount" value="1"
-                                                                placeholder="Amount" required min="1"
-                                                                class="product__amount--input amount-input"></label>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="cart__product--element">
-                                                <span class="cart__product--element-name small-text">Shipping</span>
-                                                <b class="cart__product--shipping text _min">
-                                                    Electronic Delivery - Free
-                                                </b>
-                                            </div>
-                                            <button class="cart__product--delete" type="button" title="Delete product">
-                                                <svg width="39" height="40" viewBox="0 0 39 40">
-                                                    <use xlink:href="images/sprites.svg#trash"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="cart__product">
-                                            <a href="product.html" class="cart__product--info">
-                                                <div class="cart__product--image">
-
-                                                    <img src="images/product-1.webp" alt="" width="147"
-                                                        height="147" loading="lazy">
-                                                </div>
-                                                <span class="cart__product--category small-text">Network / Vmware</span>
-                                                <h3 class="cart__product--title title _super-min">
-                                                    Vmware Workstation 17 Pro Lifetime License
-                                                </h3>
-                                                <div class="cart__product--text small-text">
-                                                    Микрохроматический интервал представляет собой деструктивный
-                                                    соноропериод. Векторно-зеркальная синхронность просветляет рефрен.
-                                                    Серпантинная волна выстраивает винил.
-                                                </div>
-                                            </a>
-                                            <div class="cart__product--element">
-                                                <span class="cart__product--element-name small-text">Price</span>
-                                                <div class="kyz-product-price">
-                                                    <span class="discount-price">$13,00</span>
-                                                    <span class="product-price">$12,00</span>
-                                                </div>
-                                            </div>
-                                            <div class="cart__product--element">
-                                                <span class="cart__product--element-name small-text">Quantity</span>
-                                                <div class="product__amount amount-block _min">
-                                                    <div class="product__amount--body quatity-selected">
-                                                        <label><input type="number" name="amount" value="1"
-                                                                placeholder="Amount" required min="1"
-                                                                class="product__amount--input amount-input"></label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="cart__product--element">
-                                                <span class="cart__product--element-name small-text">Shipping</span>
-                                                <b class="cart__product--shipping text _min">
-                                                    Electronic Delivery - Free
-                                                </b>
-                                            </div>
-                                            <button class="cart__product--delete" type="button" title="Delete product">
-                                                <svg width="39" height="40" viewBox="0 0 39 40">
-                                                    <use xlink:href="images/sprites.svg#trash"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="cart__footer details-order">
-                                        <div class="cart__total">
-                                            <p class="title _alt">total</p>
-                                            <div class="kyz-product-price">
-                                                <span class="discount-price">$13,00</span>
-                                                <span class="current-price">$12,00</span>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <!--=-=-=-=-=-=-=-=-=-=cart feature section=-=-=-=-=-=-=-=-=-=[end]  -->
-                    </div>
-                    <!-- [end] -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--=-=-=-=-=-=-=-=-=-=account page layout section=-=-=-=-=-=-=-=-=-=[end]  -->
 	@@include("partials/_product-cta.html")
 
-</main>
 
+</main>
 <!-- footer partials start -->
 @@include("partials/_footer.html")
 @@include("partials/_foot.html")
