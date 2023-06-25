@@ -100,9 +100,9 @@ img {
 }
 fieldset {
   padding: 0;
-} 
+}
 .kyz-main-body-content-wrap {
-	overflow: hidden;
+  overflow: hidden;
 }
 body {
   @include _768 {
@@ -323,4 +323,35 @@ p,
       padding-right: 42px;
     }
   }
+}
+
+// success massage popup style start here
+.footer__cta-wrapper {
+  position: relative;
+}
+.kyz-success-msg-wrapper {
+  background: var(--light-yellow);
+  height: 100%;
+  left: 0;
+  padding: 25px 29px 30px 77px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.kyz-success-msg-wrapper .close-button {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 25px;
+  gap: 10px;
+  right: 29px;
+  background-color: transparent;
+  color: var(--dark-green, #008179);
+  font-size: 18px;
+  font-family: Gotham;
+  font-weight: 900;
+  text-transform: uppercase;
 }

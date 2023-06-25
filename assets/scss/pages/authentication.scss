@@ -65,10 +65,10 @@
     padding: 108px 160px 110px;
     background-color: var(--light-yellow);
     @include _991 {
-      padding: 74px 48px 77px;
+      padding: 74px 48px 104px;
     }
-    @include _991 {
-      padding: 51px 38px 46px;
+    @include _767 {
+      padding: 51px 38px 90px;
     }
   }
   &.authentication-guest-order-page,
@@ -287,5 +287,30 @@
         margin-bottom: 82px;
       }
     }
+  }
+}
+.kyz-main-body-content-wrap{
+  &.athentication--page {
+    .kyz-button {
+      color: #fff !important;
+    }
+  }
+}
+.kyz-auth-input-authentication-wrap-cont{
+  position: relative;
+}
+.kyz-auth-input-authentication-wrap-cont .kyz-reset-pass-link {
+	color: var(--dark-green, #008179);
+	font-size: 18px;
+	font-family: Gotham;
+	font-weight: 900;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	right: 0;
+	text-align: center;
+  @include _767{
+  font-size: 14px;
   }
 }

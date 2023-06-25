@@ -1,10 +1,10 @@
 <!-- header partials start -->
 @@include("partials/_head.html")
 @@include("partials/_header.html",{
-	"class": '',
-	"filterClass": '',
-	"accountLinks": 'accounts-links-active',
-}) 
+"class": '',
+"filterClass": '',
+"accountLinks": 'accounts-links-active',
+})
 <!-- [end] -->
 <main class="kyz-main-body-content-wrap account--page">
     <!-- =-=-=-=-=-==-=-==-breadcrumb start here=-=-=-=-=-=[start]-==-= -->
@@ -28,76 +28,17 @@
                 <div class="kyz-account-title-box">
                     <h1 class="main-title kyz-account-title">account</h1>
                     @@include("partials/_account-sidebar-links.html",{
-						"class": '__top-title-account-links',
-					})
+                    "class": '__top-title-account-links',
+                    })
                 </div>
                 <div class="kyz-account-content-wrapper">
                     @@include("partials/_account-sidebar-links.html",{
-						"class": '',
-					})
+                    "class": '',
+                    })
                     <!-- [end] -->
                     <!-- account page main content start -->
                     <div class="kyz-account-main-content-box">
-                        <div class="kyz-order-history-details-cont">
-                            <!-- order- history item start -->
-                            <div class="kyz-order-details-item">
-                                <h3 class="kyz-order-date">12 may 2023</h3>
-                                <ul class="kyz-order-details">
-                                    <li class="order-id">№ 3478741</li>
-                                    <li class="price-total">
-                                        <span> total:</span>
-                                        <div class="kyz-product-price">
-                                            <span class="discount-price">$13,00</span>
-                                            <span class="current-price">$12,00</span>
-                                        </div>
-                                    </li>
-                                    <li>completed</li>
-                                    <li class="view-details-btn"><a href="/">view details</a></li>
-                                </ul>
-                                <ul class="kyz-order-details">
-                                    <li class="order-id">№ 3478741</li>
-                                    <li class="price-total">
-                                        <span> total:</span>
-                                        <div class="kyz-product-price">
-                                            <span class="discount-price">$13,00</span>
-                                            <span class="current-price">$12,00</span>
-                                        </div>
-                                    </li>
-                                    <li>completed</li>
-                                    <li class="view-details-btn"><a href="/">view details</a></li>
-                                </ul>
-                            </div>
-                            <!-- [end] -->
-                            <!-- order- history item start -->
-                            <div class="kyz-order-details-item">
-                                <h3 class="kyz-order-date">11 may 2023</h3>
-                                <ul class="kyz-order-details">
-                                    <li class="order-id">№ 3478741</li>
-                                    <li class="price-total">
-                                        <span> total:</span>
-                                        <div class="kyz-product-price">
-                                            <span class="discount-price">$13,00</span>
-                                            <span class="current-price">$12,00</span>
-                                        </div>
-                                    </li>
-                                    <li>completed</li>
-                                    <li class="view-details-btn"><a href="/">view details</a></li>
-                                </ul>
-                                <ul class="kyz-order-details">
-                                    <li class="order-id">№ 3478741</li>
-                                    <li class="price-total">
-                                        <span> total:</span>
-                                        <div class="kyz-product-price">
-                                            <span class="discount-price">$13,00</span>
-                                            <span class="current-price">$12,00</span>
-                                        </div>
-                                    </li>
-                                    <li>completed</li>
-                                    <li class="view-details-btn"><a href="/">view details</a></li>
-                                </ul>
-                            </div>
-                            <!-- [end] -->
-                        </div>
+                        @@include("partials/_order-history-list.html")
                     </div>
                     <!-- [end] -->
                 </div>

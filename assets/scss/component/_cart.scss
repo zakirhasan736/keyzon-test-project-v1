@@ -1,10 +1,13 @@
 .cart {
-  .visible-on-mob {
+  .cart__date {
     display: none;
-    @include _767 {
-      display: flex;
+    &.visible-on-mob {
+      @include _767 {
+        display: flex;
+      }
     }
   }
+
   @include _991 {
     padding-left: 48px;
     padding-right: 48px;
@@ -369,6 +372,10 @@
   // .cart__coupon
 
   &__coupon {
+    display: none;
+    &.show-coupon {
+      display: block;
+    }
     @media (min-width: 1500px) {
       grid-column: 2;
       padding-right: 30px;
@@ -387,8 +394,8 @@
     &--body {
     }
   }
-  .product__coupon--title{
-    @include _767{
+  .product__coupon--title {
+    @include _767 {
       font-size: 14px;
       line-height: 17px;
       margin-bottom: 6px;
@@ -607,7 +614,9 @@
     border: 0;
     width: auto;
     max-width: 100%;
-    input{background-color: transparent;}
+    input {
+      background-color: transparent;
+    }
   }
 }
 
@@ -825,20 +834,28 @@
     padding: 32px 38px 53px;
   }
 }
-.cart-details .cart-order-number {
-  margin-bottom: 31px;
-  @include _991 {
-    margin-bottom: 33px;
+.cart {
+  .cart-order-number {
+    display: none;
   }
-  @include _767 {
-    margin-bottom: 28px;
+  &.cart-details {
+    .cart-order-number {
+      display: block;
+      margin-bottom: 31px;
+      @include _991 {
+        margin-bottom: 33px;
+      }
+      @include _767 {
+        margin-bottom: 28px;
+      }
+    }
   }
 }
 .cart__footer.details-order .cart__total {
-	padding-top: 0;
+  padding-top: 0;
 }
 .cart__footer.details-order {
-	padding-top: 30px;
+  padding-top: 30px;
   @include _991 {
     padding-top: 47px;
   }
@@ -846,13 +863,45 @@
     padding-top: 53px;
   }
 }
-.kyz-product-cart-wrapper .cart-order-date {
-	margin-bottom: 26px;
-	padding-left: 74px;
-  @include _991{
-    padding-left: 47px;
+.kyz-product-cart-wrapper {
+  .cart-order-date {
+    margin-bottom: 26px;
+    padding-left: 74px;
+    display: none;
+    &.show-date {
+      display: block;
+    }
+    @include _991 {
+      padding-left: 47px;
+    }
+    @include _767 {
+      padding-left: 38px;
+    }
   }
-  @include _767{
-    padding-left: 38px;
+}
+.cart__list {
+  &.hide-quantity-arrow {
+    .cart__product--element {
+      .product__amount--body {
+        border: 0;
+        background: transparent;
+        .product__amount--arrow {
+          display: none;
+        }
+        .product__amount--input {
+          background: transparent;
+        }
+      }
+    }
+  }
+}
+.kyz-payment-input-form {
+  .kyz-button {
+    display: none !important;
+    &.true{
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
