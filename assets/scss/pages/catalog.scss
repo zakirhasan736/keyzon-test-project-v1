@@ -38,3 +38,12 @@
     }
   }
 }
+.kyz-all-products-main{
+  &.no-filter-view {
+    .kyz-product-filter-widgets{
+      &.filter-on-tablet {
+        display: none !important;
+      }
+    }
+  }
+}
